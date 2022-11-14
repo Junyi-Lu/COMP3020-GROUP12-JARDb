@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- This is the navigation bar code--> 
+<div class = "topnav">
+    <a class = "topnav-left" href="#logo"> LOGO</a>
+    <a href = "#categories"> Categories</a>
+    <input type="text" placeholder="Search...">
+    <div class = "topnav-right">
+        <a href = "#Mode"> Dark</a>
+        <a href = "#Account"> Login</a>
+    </div>
+</div>
+
+<!-- This is the featured slideshow-->
+<div class = "featured-slideshow">
+
+    <div class = "myFeatured fade">
+        <img src="deadpool.jpeg" style = "width:100%">
+    </div>
+
+    <div class = "myFeatured fade">
+        <img src="americansniper.jpeg"  style = "width:100%">
+    </div>
+
+    <div class = "myFeatured fade">
+        <img src="thebatman.jpeg" style = "width:100%">
+    </div>
+
+    <a class ="previous" onclick="plusFeatured(-1)">&#10094;</a>
+    <a class ="next" onclick="plusFeatured(1)">&#10095;</a>
+</div>
+<div style="text-align:center">
+    <span class="circle" onclick="currentFeatured(1)"></span> 
+    <span class="circle" onclick="currentFeatured(2)"></span> 
+    <span class="circle" onclick="currentFeatured(3)"></span> 
+</div>
+<br>
+<div></div>
+<div> Watch List
+    <div>
+        <img src="deadpool.jpeg" alt="Deadpool" width="300" height="100">
+        <img src="americansniper.jpeg" alt="American Sniper" width="300" height="100">
+        <img src="gattaca.jpeg" alt="Gattaca" width="300" height="100">
+        <img src="thebatman.jpeg" alt="The Batman" width="300" height="100">
+    </div>
+</div>
+
+<div>Top 5
+    <div>
+        <img src="deadpool.jpeg" alt="Deadpool" width="300" height="100">
+        <img src="americansniper.jpeg" alt="American Sniper" width="150" height="50">
+        <img src="gattaca.jpeg" alt="Gattaca" width="150" height="50">
+        <img src="thebatman.jpeg" alt="The Batman" width="150" height="50">
+        <img src="nope.jpeg" alt="Nope" width="150" height="50">
+    </div>
+</div>
+
+<div> Recommended
+    <div>
+    <img src="gattaca.jpeg" alt="Gattaca" width="300" height="100">
+    <img src="thebatman.jpeg" alt="The Batman" width="300" height="100">
+    </div>
+</div>
+
+<div> Browse By Categories
+    <div>
+        <img src="action.jpeg" alt="Action" width="300" height="100">
+        <img src="comedy.png" alt="Comedy" width="300" height="100">
+        <img src="horror.jpeg" alt="Horror" width="300" height="100">
+        <img src="sci-fi.jpeg" alt="Sci-Fi" width="300" height="100">
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
