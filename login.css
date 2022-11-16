@@ -1,0 +1,164 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  input,
+  button{
+    outline: none;
+    border: none;
+  }
+
+  a{
+    text-decoration: none;
+    color: #333;
+    margin: 1.25rem 0;
+  }
+
+  body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('https://s2.loli.net/2022/11/14/LJUrfdIgHwnQKc4.jpg') no-repeat fixed center;
+    background-size: cover;
+  }
+
+  .container{
+    position: relative;
+    width: 60vw;
+    height: 70vh;
+    background-color: #e9e9e9;
+    box-shadow: 0 1rem 1.5rem rgba(0,0,0,.3),
+    0 .5rem .5rem rgba(0,0,0,.2);
+    border-radius: 1rem;
+    overflow: hidden;
+    
+  }
+
+  .container-form{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    transition: all .5s ease-in-out;
+  }
+
+  .container-signup{
+    left: 0;
+    width: 50%;
+    z-index: 1;
+    opacity: 0;
+  }
+
+  .container-signin{
+    left: 0;
+    width: 50%;
+    z-index: 2;
+    opacity: 1;
+  }
+
+  .container.switch .container-signup{
+    transform: translateX(100%);
+    z-index: 5;
+    opacity: 1;
+  }
+  .container.switch .container-signin{
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  .container-overlay{
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    transform: translateX(0);
+    transition: transform .5s ease-in-out;
+    z-index: 999;
+  }
+
+  .overlay{
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 200%;
+    height: 100%;
+    background: url('https://s2.loli.net/2022/11/14/t9RfWgJFYQPvBcZ.jpg') no-repeat fixed
+    center;
+    background-size: cover;
+    transition: transform .5s ease-in-out;
+
+  }
+
+  .container.switch .container-overlay{
+    transform: translateX(-100%);
+  }
+  .container.switch .overlay{
+    transform: translateX(50%);
+  }
+
+  .overlay-slide{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    transition: transform .5s ease-in-out;
+  }
+
+  .overlay-left{
+    transform: translateX(-20%);
+  }
+  .overlay-right{
+    transform: translateX(0);
+    right:0;
+  }
+  .container.switch .overlay-left{
+    transform: translateX(0);
+  }
+  .container.switch .overlay-right{
+    transform: translateX(20%);
+  }
+
+  .form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 1rem;
+  }
+
+  .input{
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 1rem;
+  }
+
+  .form-title{
+    font-weight: 300;
+    margin-bottom: 1rem;
+  }
+
+  .submit{
+    padding: 1rem 3rem;
+    background-image: -webkit-linear-gradient(40deg,#0367a6 0%,#008997 70%);
+    border-radius: 1rem;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: transform .1s ease-in-out;
+  }
+
+  .form>.submit{
+    margin-top: 1.5rem;
+  }
+
+  .submit:active{
+    transform: scale(0.95);
+  }
