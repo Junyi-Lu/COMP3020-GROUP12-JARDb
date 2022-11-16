@@ -1,15 +1,15 @@
-window.addEventListener('load',()=>{
+window.addEventListener('load', () => {
 
-    const goSignIn = document.querySelector('#goSignIn');
-    const goSignUp = document.querySelector('#goSignUp');
+  const goSignIn = document.querySelector('#goSignIn');
+  const goSignUp = document.querySelector('#goSignUp');
 
-    const container = document.querySelector('.container');
+  const container = document.querySelector('.container');
 
-    goSignIn.addEventListener('click',()=>{
-      container.classList.remove('switch');
-    })
-    goSignUp.addEventListener('click',()=>{
-      container.classList.add('switch');
-    })
-
+  goSignIn.addEventListener('click', () => {
+    container.classList.remove('switch');
   })
+  goSignUp.addEventListener('click', () => {
+    container.classList.add('switch');
+  })
+
+})
