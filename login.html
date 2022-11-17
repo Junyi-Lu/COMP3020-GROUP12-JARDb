@@ -9,7 +9,6 @@
 
     <link rel="stylesheet" href="login.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-    <script src="login.js"></script>
 </head>
 
 <body>
@@ -24,9 +23,9 @@
                         <p>
                             <input type="text" placeholder="Username" id="username">
                         </p>
-                        <p class="password">
-                            <input type="password" placeholder="Password" id="userpass">
-                            <i class="ri-eye-off-line"></i>
+                        <p>
+                            <input type="password" class=“pass-input” placeholder="Password" id="userpass">
+                            <i id="trigger" class="ri-eye-off-line"></i>
                         </p>
                         <p>
                             <input type="submit" class="submit" value="Sign In" onclick="return login();">
@@ -46,6 +45,7 @@
             </div>
         </div>
     </div>
+    <script src="login.js"></script>
 </body>
 
 </html>
