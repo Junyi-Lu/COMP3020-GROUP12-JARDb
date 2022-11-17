@@ -5,55 +5,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Login Page</title>
 
-    <link rel="stylesheet" href="./login.css">
-    <script src="./login.js"></script>
+    <link rel="stylesheet" href="login.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="login.js"></script>
 </head>
-<script>
-    function login() {
-        var name = document.getElementById("username").value;
-        var pass = document.getElementById("userpass").value;
-        if (name == "admin", pass == "admin") {
-            window.location.href = "index.html";
-            return false;
-        } else {
-            alert("wrong username or password");
-            window.location.href = "login.html";
-            return false;
-        }
-    }
-</script>
 
 <body>
-
-    <div class="container switch">
-
-        <div class="container-form container-signup">
-            <form action="#" class="form">
-                <h2 class="form-title">Sign Up</h2>
-                <input type="text" required="required" id="name" placeholder="User" class="input">
-                <input type="text" required="required" id="password" placeholder="Password" class="input">
-                <button class="submit">sign up</button>
-            </form>
-        </div>
-
-        <div class="container-form container-signin">
-            <form action="#" class="form">
-                <h2 class="form-title">Sign In</h2>
-                <input type="text" required="required" placeholder="User" id="username" class="input">
-                <input type="password" required="required" placeholder="Password" id="userpass" class="input">
-                <button class="submit" onclick="return login();">sign in</button>
-            </form>
-        </div>
-
-        <div class="container-overlay">
-            <div class="overlay">
-                <div class="overlay-slide overlay-left">
-                    <button class="submit" id="goSignIn">sign in</button>
+    <div id="page" class="site">
+        <div class="container">
+            <div class="login">
+                <div class="hero">
+                    <h1>Sign In to <br>Watch the World</h1>
                 </div>
-                <div class="overlay-slide overlay-right">
-                    <button class="submit" id="goSignUp">sign up</button>
+                <div class="main">
+                    <form action="">
+                        <p>
+                            <input type="text" placeholder="Username" id="username">
+                        </p>
+                        <p class="password">
+                            <input type="password" placeholder="Password" id="userpass">
+                            <i class="ri-eye-off-line"></i>
+                        </p>
+                        <p>
+                            <input type="submit" class="submit" value="Sign In" onclick="return login();">
+                        </p>
+                    </form>
+                    <div class="options">
+                        <div class="separator">
+                            <p>or continue with</p>
+                        </div>
+                        <ul>
+                            <li><a href="#"><i class="ri-google-fill ri-2x"></i></a></li>
+                            <li><a href="#"><i class="ri-apple-fill ri-2x"></i></a></li>
+                            <li><a href="#"><i class="ri-facebook-fill ri-2x"></i></a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>

@@ -1,15 +1,12 @@
-window.addEventListener('load', () => {
-
-  const goSignIn = document.querySelector('#goSignIn');
-  const goSignUp = document.querySelector('#goSignUp');
-
-  const container = document.querySelector('.container');
-
-  goSignIn.addEventListener('click', () => {
-    container.classList.remove('switch');
-  })
-  goSignUp.addEventListener('click', () => {
-    container.classList.add('switch');
-  })
-
-})
+function login() {
+    var name = document.getElementById("username").value;
+    var pass = document.getElementById("userpass").value;
+    if (name == "admin", pass == "admin") {
+        window.location.href = "index.html";
+        return false;
+    } else {
+        alert("Incorrect Username/Password");
+        window.location.href = "login.html";
+        return false;
+    }
+}
