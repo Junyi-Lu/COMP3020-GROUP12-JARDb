@@ -1,7 +1,8 @@
 function login() {
     var name = document.getElementById("username").value;
     var pass = document.getElementById("userpass").value;
-    if (name == "admin", pass = "admin") {
+
+    if (name == "admin", pass == "admin") {
         window.location.href = "index.html";
         return false;
     } else {
