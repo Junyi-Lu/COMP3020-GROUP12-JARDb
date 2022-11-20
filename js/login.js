@@ -3,7 +3,7 @@ function login() {
     var pass = document.getElementById("userpass").value;
 
     if (name == "admin", pass == "admin") {
-        window.location.href = "index.html";
+        window.location.href = "newIndex.html";
         return false;
     } else {
         alert("Incorrect Username/Password");
