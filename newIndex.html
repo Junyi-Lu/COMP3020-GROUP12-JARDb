@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LARDB</title>
+    <title>JARDB</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
@@ -13,24 +13,18 @@
 
 <body>
     <div class="menu-bar">
-<<<<<<< Updated upstream
-        <h1 class="logo">LAR<span>Db.</span></h1>
-        <p> <input type="search" class="search-data" placeholder="Search LARDb" , required>
-            <i class="ri-search-line"></i></p>
-=======
-        <a href="index.html">
+        <a href="newIndex.html">
             <h1 class="logo">JAR<span>Db.</span></h1>
         </a>
         <p>
             <input type="text" maxlength="70" class="search-data" placeholder="Search JARDb" , required>
             <i id="searchBar" class="ri-search-line"></i>
         </p>
->>>>>>> Stashed changes
         <ul>
-            <li><a href="#">Categories <i id="fd" class="fas fa-caret-down"></i></a>
+            <li><a href="#">Categories <i class="fas fa-caret-down"></i></a>
                 <div class="dropdown-menu">
                     <ul>
-                        <li><a href="#">Movies<i id="fd" class="fas fa-caret-right"></i></a>
+                        <li><a href="#">Movies<i class="fas fa-caret-right"></i></a>
                             <div class="dropdown-menu-1">
                                 <ul>
                                     <li><a href="#">Action</a></li>
@@ -40,7 +34,7 @@
                                 </ul>
                             </div>
                         </li>
-                        <li><a href="#">Watch<i id="fd" class="fas fa-caret-right"></i></a>
+                        <li><a href="#">Watch<i class="fas fa-caret-right"></i></a>
                             <div class="dropdown-menu-2">
                                 <ul>
                                     <li><a href="#">Watched</a></li>
@@ -51,38 +45,38 @@
                     </ul>
                 </div>
             </li>
-<<<<<<< Updated upstream
-            <li><a href="#">AskAI</a></li>
-            <li><a href="login.html">LOGIN</a></li>
-=======
             <li><a href="#">AskAI<i class="ri-robot-line"></i></a></li>
-            <li><a href="login.html">Sign In<i class="ri-login-box-line"></i></a></li>
->>>>>>> Stashed changes
+            <li><a href="index.html">Sign Out<i class="ri-logout-box-line"></i></a></li>
         </ul>
     </div>
 
     <!-- This is the featured slideshow-->
-    <div class="myFeatured fade">
-        <img src="images/deadpool.jpeg" style="width:100%">
-    </div>
+    <div class="featured-slideshow">
 
-    <div class="myFeatured fade">
-        <img src="images/americansniper.jpeg" style="width:100%">
-    </div>
+        <div class="myFeatured fade">
+            <img src="images/deadpool.jpeg" style="width:100%">
+        </div>
 
-    <div class="myFeatured fade">
-        <img src="images/thebatman.jpeg" style="width:100%">
-    </div>
+        <div class="myFeatured fade">
+            <img src="images/americansniper.jpeg" style="width:100%">
+        </div>
 
-    <a class="previous" onclick="plusFeatured(-1)">&#10094;</a>
-    <a class="next" onclick="plusFeatured(1)">&#10095;</a>
+        <div class="myFeatured fade">
+            <img src="images/thebatman.jpeg" style="width:100%">
+        </div>
+
+        <a class="previous" onclick="plusFeatured(-1)">&#10094;</a>
+        <a class="next" onclick="plusFeatured(1)">&#10095;</a>
+    </div>
     <div style="text-align:center">
         <span class="circle" onclick="currentFeatured(1)"></span>
         <span class="circle" onclick="currentFeatured(2)"></span>
         <span class="circle" onclick="currentFeatured(3)"></span>
     </div>
+    <br>
 
-    <h1>WatchList</h1>
+
+    <h2>WatchList</h2>
     <div class=formatWatch>
         <div class="image watch">
             <img src="images/deadpool.jpeg" alt="" width=330px>
@@ -127,7 +121,7 @@
 
 
 
-    <h1>Top 5</h1>
+    <h2>Top 5</h2>
     <div class="top5">
         <div class="images top">
             <img src="images/deadpool.jpeg" alt="" width=250px>
@@ -182,7 +176,7 @@
 
 
 
-    <h1>Recommended</h1>
+    <h2>Recommended</h2>
     <div class=recommend>
         <div class="image watch">
             <img src="images/gattaca.jpeg" alt="" width=330px>
