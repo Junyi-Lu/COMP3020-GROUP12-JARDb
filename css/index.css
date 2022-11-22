@@ -40,8 +40,6 @@ body {
   position: relative;
 }
 
-<<<<<<< Updated upstream
-=======
 .menu-bar p{
   position: relative;
 }
@@ -57,17 +55,15 @@ body {
 }
 
 
->>>>>>> Stashed changes
 .menu-bar input[type="text"] {
-  float: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border: none;
-  padding: 6px;
-  margin-right: 16px;
-  font-size: 17px;
+  font: inherit;
+  font-size: 14px;
+  width: 600px;
+  border: 0;
+  outline: 0;
+  padding: 0 20px;
+  line-height: 45px;
+  border-radius: 10px;
 }
 
 .menu-bar ul {
@@ -146,37 +142,6 @@ body {
   background-color: var(--color-black);
 }
 
-<<<<<<< Updated upstream
-.dropdown-menu-3 {
-  display: none;
-}
-
-.dropdown-menu ul li:hover .dropdown-menu-3 {
-  display: block;
-  position: absolute;
-  left: 150px;
-  top: 0;
-  background-color: var(--color-black);
-}
-.menu-bar input[type="search"]{
-  font: inherit;
-  font-size: 14px;
-  width: 350px;
-  border: 0;
-  outline: 0;
-  padding: 0 20px;
-  line-height: 60px;
-  border-radius: 10px;
-}
-.featured-slideshow {
-  padding: 0;
-  box-sizing: border-box;
-  z-index: 0;
-  margin: 0;
-  position: relative;
-}
-=======
->>>>>>> Stashed changes
 
 .myFeatured {
   display: none;

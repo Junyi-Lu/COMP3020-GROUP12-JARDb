@@ -3,11 +3,7 @@ function login() {
     var pass = document.getElementById("userpass").value;
 
     if (name == "admin", pass == "admin") {
-<<<<<<< Updated upstream
-        window.location.href = "index.html";
-=======
         window.location.href = "newindex.html";
->>>>>>> Stashed changes
         return false;
     } else {
         alert("Incorrect Username/Password");
