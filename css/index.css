@@ -173,11 +173,14 @@ body {
 }
 
 .circle {
+  position: relative;
+  bottom: 30px;
+  left: center;
   cursor: pointer;
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: rgb(56, 53, 53);
+  background-color: rgb(255, 255, 255);
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
@@ -185,7 +188,7 @@ body {
 
 .active,
 .circle:hover {
-  background-color: #0c0c0c;
+  background-color: #ff0000bb;
 }
 
 .fade {
@@ -312,8 +315,6 @@ body {
 }
 
 
-
-
 .top{
   position: relative;
   transform: translate(1%, -3%);
@@ -385,14 +386,16 @@ body {
 }
 
 .formatWatch{
-display: flex;
-box-sizing: border-box;
-overflow: hidden;
-word-break: break-all;
-word-wrap: break-word;
+  padding: 20px 0;
+  display: flex;
+  box-sizing: border-box;
+  overflow: hidden;
+  word-break: break-all;
+  word-wrap: break-word;
 }
 
 .top5{
+  padding: 20px 0;
   display: flex;
   box-sizing: border-box;
   overflow: hidden;
@@ -401,17 +404,52 @@ word-wrap: break-word;
 }
 
 .recommend{
+  padding: 20px 0;
   display: flex;
-box-sizing: border-box;
-overflow: hidden;
-word-break: break-all;
-word-wrap: break-word;
+  box-sizing: border-box;
+  overflow: hidden;
+  word-break: break-all;
+  word-wrap: break-word;
 }
 
 .categories{
+  padding: 20px 0;
   display: flex;
-box-sizing: border-box;
-overflow: hidden;
-word-break: break-all;
-word-wrap: break-word;
+  box-sizing: border-box;
+  overflow: hidden;
+  word-break: keep-all;
+  word-wrap: normal;
+}
+
+.watchList,  .top_5, .recommended, .categoriesText, .demoBar{
+  text-indent: 3%;
+  font-size: 25px;
+  color: var(--color-white);
+}
+
+.closure{
+  float: center;
+  width: 94%;
+  margin-left: 3%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+#movieList-Placeholder{
+  display: none;
+  font-size: 2em;
+  margin-left: 90px;
+}
+
+.movies{
+  display: none;
+}
+
+.MovieList{
+  display: none;
+}
+
+.demo{
+  border-image: round;
 }
