@@ -1,0 +1,336 @@
+/*
+ * Grid Layout
+ * 3 collumns
+ * Each collumn has a width of 30%
+ * Each collumn is spaced by 5%
+ */
+
+body
+{
+    background-color: rgb(15, 15, 15);
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+p
+{
+    font-family: Arial;
+    color: whitesmoke;
+}
+
+h1
+{
+    font-family: Arial;
+    font-size: 30px;
+
+    font-weight: normal;
+    
+    color: white;
+    
+
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+h2
+{
+    font-family: Arial;
+    font-size: 25px;
+    font-weight: normal;
+    
+    color: whitesmoke;
+    
+    width: 30%;
+
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+.videoPlayerBlock
+{
+    width: 100%;
+    height: 100%;
+}
+
+.video
+{
+    width: 100%;
+    height: 100%;
+}
+
+.basicInfo
+{
+    width: 30%;
+    margin-top: 25px;
+    margin-left: 0;
+    display: inline-block;
+}
+
+
+.ratingBlock
+{
+    margin-top: 25px;
+    width: 30%;
+    float:right;
+}
+
+.ratingHeading
+{
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.ratingDropDown
+{
+    position: relative;
+    display: inline-block;
+    z-index: 9;
+}
+
+.ratingOptions
+{
+    background-color: rgb(27, 27, 27);
+    border-radius: 5px;
+
+    display:inline-block;
+
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.ratingButton, .oneStar, .twoStar, .threeStar, .fourStar, .fiveStar
+{
+    font-family: Arial;
+    font-size: 30px; 
+    display:inline-block;
+    color: rgb(61, 61, 61);
+
+    margin-left: 5px;
+    margin-right: 5px;
+
+    cursor: pointer;
+    transition: color 0.5s;
+}
+
+/* Rating Hovers end */
+.fiveStar:hover + .fourStar
+{
+    color: rgb(233, 216, 67);    
+}
+
+.ratingButton
+{
+    background:none;
+    border:none;
+
+    margin-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.ratingButton:hover
+{
+    color: rgb(233, 216, 67);    
+}
+
+.totalRating
+{
+    font-size: 25px;
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.categories
+{
+    float: left;
+}
+
+.category
+{
+    background-color: rgb(46, 46, 46);
+
+    border: none;
+    border-radius: 8px;
+
+    height: 30px;
+    width: 100px;
+
+    vertical-align: top;
+
+    color: whitesmoke;
+
+    cursor: pointer;   
+
+    display: inline-block;
+
+    transition: background-color 0.5s;
+}
+
+.category:hover
+{
+    background-color: rgb(75, 75, 75);
+}
+
+.category:active
+{
+    background-color: rgb(149, 149, 149);
+}
+
+.information
+{
+    display: block;
+    margin-bottom: 125px
+}
+
+.synopsis
+{
+    font-size: 15px;
+    line-height: 23px;
+    margin-top: 30px;
+}
+
+.more
+{
+    background:none;
+    border:none;
+
+    color:whitesmoke;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+}
+
+.more:hover
+{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.more:active
+{
+    opacity: 50%;
+}
+
+.nextEpisodeBlock
+{
+    position: relative;
+    height: 25%;
+    margin-bottom: 125px;
+}
+
+.thumbnail
+{
+    width: 30%;
+    border-radius: 5px;
+    object-fit:contain
+}
+
+.nextEpisodeInfo
+{
+    position: absolute;
+    top: 0;
+    left: 30%;
+
+    margin-top: 0;
+    margin-left: 1%;
+    width: 29%;
+    font-size: 25px;
+}
+
+.moreEpisodes
+{
+    position: absolute;
+    left: 70%;
+    width: 10%;
+    height: 100%;
+
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    
+    background-color: rgb(46, 46, 46);
+}
+
+.more
+{
+    font-family: Arial;
+    color: whitesmoke;
+    font-size: 100%;
+}
+
+.ri-layout-grid-fill
+{
+    margin-top: 5%;
+    font-size: 500%;
+    color:whitesmoke;
+}
+
+.actorGrid
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5%;
+    row-gap: 60px;
+    margin-bottom: 125px;
+}
+
+.actor
+{
+    height: 25%;
+    position: relative;
+}
+
+.actorImage
+{
+    border-radius: 100%;
+    height: 100px;   /* Temporary */
+}
+
+.actorInfo
+{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+
+.characterName
+{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 20px;
+}
+
+.prev, .next
+{
+    color: whitesmoke;
+}
+
+.swiper 
+{
+    width: 100%;
+    margin-bottom: 500px;
+}
+
+.swiper-button-prev, .swiper-button-next
+{
+    color: red;
+    opacity: 50%;
+}
+
+.swiper-image
+{
+    width: 25%;
+}
+
+.swiper-slide
+{
+    width: 100%;
+    height: 100%;
+}
