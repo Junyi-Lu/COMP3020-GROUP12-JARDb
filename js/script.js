@@ -40,6 +40,7 @@ class Movie {
         this.actor3 = actor3;
     }
 }
+
 const deadpool = new Movie("Deadpool", "Action", "Comedy", 4.5, "images/deadpool.jpeg", "Ryan Reynolds", "Morena Baccarin", "Gina Carano");
 const americanSniper = new Movie("American Sniper", "Action", "Biography", 4.5, "images/americansniper.jpeg", "Bradley Cooper", "Sienna Miller", "Kyle Gallner");
 const gattaca = new Movie("Gattaca", "Sci-Fi", "Romance", 3.9, "images/gattaca.jpeg", "Ethan Hawke", "Uma Thurma", "Jude Law");
@@ -55,6 +56,9 @@ function displayDemo() {
     for (let i = 0; i < MovieList.length && i < demoList.length; i++) {
         console.log(demoList[i]);
         demoList[i].src = MovieList[i].img.src;
+        let href = MovieList[i].title;
+        href += ".html"
+        demoList[i].href = href;
     }
 }
 
@@ -70,9 +74,9 @@ function search_movies() {
         } else {
             console.log(MovieList[i].title);
             console.log("Found the item");
+            movieList[0].style.display = "block";
             movieList[0].src = MovieList[i].img.src;
             console.log(MovieList[i].img.src);
-            // movieList[i].src = MovieList[i].img.src;
         }
     }
 }

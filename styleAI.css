@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    vertical-align: baseline;
+
+
+}
+
+
+
+.panel {
+
+    animation: myAnim 2s ease 0s 1 normal forwards;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    vertical-align: baseline;
+
+}
+
+
+
+@keyframes myAnim {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.2;
+    }
+
+    100% {
+        opacity: 0.6;
+    }
+
+
+}
+
+.question-container {
+    margin: 10px;
+    padding: 5px;
+    width: 80vw;
+    height: 10vh;
+
+
+
+
+
+
+
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    vertical-align: baseline;
+    background-color: #000000;
+    color: #ffffff;
+
+}
+
+
+
+
+body {
+
+    background-image: url('background.jpg');
+    background-size: 1500px;
+    background-color: rgba(19, 21, 25, 0.5);
+    font-family: 'Poppins', sans-serif;
+    vertical-align: baseline;
+
+}
+
+.result {
+    margin: 10px;
+    padding: 5px;
+    width: 80vw;
+    height: 10vh;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    vertical-align: baseline;
+}
+
+
+
+.option-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+    padding: 5px;
+    width: 80vw;
+    height: 20vh;
+
+    background-color: transparent;
+    font-family: 'Poppins', sans-serif;
+    vertical-align: baseline;
+
+
+
+
+
+}
+
+
+
+
+
+.option {
+    padding: 10px;
+    width: 15vw;
+    height: 13vh;
+    font-size: 100%;
+    background-color: transparent;
+    border-radius: 20%;
+    font-family: 'Poppins', sans-serif;
+
+    color: #ffffff;
+    border: solid 1px #ffffff;
+
+    padding-bottom: 0.5rem;
+    margin: 0 0 2rem 0;
+}
+
+
+.option:hover {
+    background-color: #fe921f;
+}
+
+.navigation {
+    width: 80vw;
+    height: 10vh;
+    margin: 10px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+  
+    font-family: 'Lato', sans-serif;
+    vertical-align: baseline;
+    background-color: transparent;
+
+}
+
+.next {
+    width: 30vw;
+    height: 8vh;
+    padding: 5px;
+    font-size: 100%;
+    font-family: 'Poppins', sans-serif;
+    vertical-align: baseline;
+}
+
+
+
+.next {
+    color: white;
+    background-color: #BF3325;
+    font-family: 'Poppins', sans-serif;
+    vertical-align: baseline;
+}
+
+
+.watch {
+    width: 30vw;
+    height: 8vh;
+    padding: 5px;
+    font-size: 100%;
+    font-family: 'Poppins', sans-serif;
+    vertical-align: baseline;
+}
+
+
+
+.watch {
+    color: white;
+    background-color: #BF3325;
+    font-family: 'Poppins', sans-serif;
+    vertical-align: baseline;
+
+}

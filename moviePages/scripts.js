@@ -97,3 +97,20 @@ function highlightStars(rating, isHigligted)
 }
 
 // 
+
+var toTop = document.getElementById("get_top");
+toTop.addEventListener('click', function () {
+    window.scrollTo(0, 0);
+})
+
+window.onscroll = function () {
+    display();
+};
+
+function display() {
+    if (document.documentElement.scrollTop > 20) {
+        toTop.style.display = "block";
+    } else {
+        toTop.style.display = "none";
+    }
+}
