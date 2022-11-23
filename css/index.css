@@ -82,7 +82,7 @@ body {
   color: var(--color-white);
   text-decoration: none;
   height:px
-  transition: all 0.3s;
+  transition all 0.3s;
 }
 
 .menu-bar ul li a:hover {
