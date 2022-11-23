@@ -415,3 +415,15 @@
   word-break: break-all;
   word-wrap: break-word;
   }
+
+  .closure{
+    float: center;
+    width: 93.5%;
+    margin-left: 3%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  h1{
+    color: white;
+  }
