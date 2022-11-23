@@ -13,7 +13,6 @@
   
   body {
     font-family: sans-serif;
-    display: grid;
     background: var(--color-black);
     
     /* background-color:#FAF0E5 ; */
