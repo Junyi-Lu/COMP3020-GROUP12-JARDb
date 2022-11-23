@@ -13,7 +13,7 @@
 
 <body>
     <div class="menu-bar">
-        <a href="index.html">
+        <a href="newIndex.html">
             <h1 class="logo">JAR<span>Db.</span></h1>
         </a>
         <p>
@@ -21,21 +21,20 @@
             <i id="searchBar" class="ri-search-line"></i>
         </p>
         <ul>
-            <li><a href="#">Categories <i id="fd" class="fas fa-caret-down"></i></a>
+            <li><a href="#">Categories <i class="fas fa-caret-down"></i></a>
                 <div class="dropdown-menu">
                     <ul>
-                        <li><a href="#">Movies<i id="fd" class="fas fa-caret-right"></i></a>
+                        <li><a href="#">Movies<i class="fas fa-caret-right"></i></a>
                             <div class="dropdown-menu-1">
                                 <ul>
-                                    <li><a href="categoryPages/action.html">Action</a></li>
-                                    <li><a href="categoryPages/comedy.html">Comedy</a></li>
-                                    <li><a href="categoryPages/fantasy.html">Fantasy</a></li>
-                                    <li><a href="categoryPages/horror.html">Horror</a></li>
-                                    <li><a href="categoryPages/sciFi.html">Sci-Fi</a></li>
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Comedy</a></li>
+                                    <li><a href="#">Fantasy</a></li>
+                                    <li><a href="#">Sci-Fi</a></li>
                                 </ul>
                             </div>
                         </li>
-                        <li><a href="#">Watch<i id="fd" class="fas fa-caret-right"></i></a>
+                        <li><a href="#">Watch<i class="fas fa-caret-right"></i></a>
                             <div class="dropdown-menu-2">
                                 <ul>
                                     <li><a href="#">Watched</a></li>
@@ -47,32 +46,37 @@
                 </div>
             </li>
             <li><a href="#">AskAI<i class="ri-robot-line"></i></a></li>
-            <li><a href="login.html">Sign In<i class="ri-login-box-line"></i></a></li>
+            <li><a href="index.html">Sign Out<i class="ri-logout-box-line"></i></a></li>
         </ul>
     </div>
 
     <!-- This is the featured slideshow-->
-    <div class="myFeatured fade">
-        <img src="images/deadpool.jpeg" style="width:100%">
-    </div>
+    <div class="featured-slideshow">
 
-    <div class="myFeatured fade">
-        <img src="images/americansniper.jpeg" style="width:100%">
-    </div>
+        <div class="myFeatured fade">
+            <img src="images/deadpool.jpeg" style="width:100%">
+        </div>
 
-    <div class="myFeatured fade">
-        <img src="images/thebatman.jpeg" style="width:100%">
-    </div>
+        <div class="myFeatured fade">
+            <img src="images/americansniper.jpeg" style="width:100%">
+        </div>
 
-    <a class="previous" onclick="plusFeatured(-1)">&#10094;</a>
-    <a class="next" onclick="plusFeatured(1)">&#10095;</a>
+        <div class="myFeatured fade">
+            <img src="images/thebatman.jpeg" style="width:100%">
+        </div>
+
+        <a class="previous" onclick="plusFeatured(-1)">&#10094;</a>
+        <a class="next" onclick="plusFeatured(1)">&#10095;</a>
+    </div>
     <div style="text-align:center">
         <span class="circle" onclick="currentFeatured(1)"></span>
         <span class="circle" onclick="currentFeatured(2)"></span>
         <span class="circle" onclick="currentFeatured(3)"></span>
     </div>
+    <br>
 
-    <h1>WatchList</h1>
+
+    <h2>WatchList</h2>
     <div class=formatWatch>
         <div class="image watch">
             <img src="images/deadpool.jpeg" alt="" width=330px>
@@ -117,7 +121,7 @@
 
 
 
-    <h1>Top 5</h1>
+    <h2>Top 5</h2>
     <div class="top5">
         <div class="images top">
             <img src="images/deadpool.jpeg" alt="" width=250px>
@@ -172,7 +176,7 @@
 
 
 
-    <h1>Recommended</h1>
+    <h2>Recommended</h2>
     <div class=recommend>
         <div class="image watch">
             <img src="images/gattaca.jpeg" alt="" width=330px>

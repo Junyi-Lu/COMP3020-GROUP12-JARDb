@@ -11,13 +11,13 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 
-<body>
+<body onload="displayDemo()">
     <div class="menu-bar">
         <a href="index.html">
             <h1 class="logo">JAR<span>Db.</span></h1>
         </a>
         <p>
-            <input type="text" maxlength="70" class="search-data" placeholder="Search JARDb" , required>
+            <input id="searchID" onkeyup="search_movies()" type="text" maxlength="70" class="search-data" placeholder="Search JARDb" , required>
             <i id="searchBar" class="ri-search-line"></i>
         </p>
         <ul>
@@ -27,11 +27,10 @@
                         <li><a href="#">Movies<i id="fd" class="fas fa-caret-right"></i></a>
                             <div class="dropdown-menu-1">
                                 <ul>
-                                    <li><a href="categoryPages/action.html">Action</a></li>
-                                    <li><a href="categoryPages/comedy.html">Comedy</a></li>
-                                    <li><a href="categoryPages/fantasy.html">Fantasy</a></li>
-                                    <li><a href="categoryPages/horror.html">Horror</a></li>
-                                    <li><a href="categoryPages/sciFi.html">Sci-Fi</a></li>
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Comedy</a></li>
+                                    <li><a href="#">Fantasy</a></li>
+                                    <li><a href="#">Sci-Fi</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -47,34 +46,45 @@
                 </div>
             </li>
             <li><a href="#">AskAI<i class="ri-robot-line"></i></a></li>
-            <li><a href="login.html">Sign In<i class="ri-login-box-line"></i></a></li>
+            <li><a href="login.html">Sign Out<i class="ri-login-box-line"></i></a></li>
         </ul>
     </div>
 
+<div>
+        <ol id="movieList-Placeholder">
+            <li><img class="movies" src width = "300" height = "100" ></li>
+            <li><img class="movies" src width = "300" height = "100"></li>
+        </ol>
+    </div>
     <!-- This is the featured slideshow-->
-    <div class="myFeatured fade">
-        <img src="images/deadpool.jpeg" style="width:100%">
-    </div>
+    <div class="featured-slideshow">
 
-    <div class="myFeatured fade">
-        <img src="images/americansniper.jpeg" style="width:100%">
-    </div>
+        <div class="myFeatured fade">
+            <img src="images/deadpool.jpeg" style="width:100%">
+        </div>
 
-    <div class="myFeatured fade">
-        <img src="images/thebatman.jpeg" style="width:100%">
-    </div>
+        <div class="myFeatured fade">
+            <img src="images/americansniper.jpeg" style="width:100%">
+        </div>
 
-    <a class="previous" onclick="plusFeatured(-1)">&#10094;</a>
-    <a class="next" onclick="plusFeatured(1)">&#10095;</a>
-    <div style="text-align:center">
-        <span class="circle" onclick="currentFeatured(1)"></span>
-        <span class="circle" onclick="currentFeatured(2)"></span>
-        <span class="circle" onclick="currentFeatured(3)"></span>
-    </div>
+        <div class="myFeatured fade">
+            <img src="images/thebatman.jpeg" style="width:100%">
+        </div>
 
-    <h1>WatchList</h1>
+        <a class="previous" onclick="plusFeatured(-1)">&#10094;</a>
+        <a class="next" onclick="plusFeatured(1)">&#10095;</a>
+        </div>
+        <div style="text-align:center">
+            <span class="circle" onclick="currentFeatured(1)"></span>
+            <span class="circle" onclick="currentFeatured(2)"></span>
+            <span class="circle" onclick="currentFeatured(3)"></span>
+        </div> 
+    <br>
+
+    <h1 style = "padding: 20px, 0" class="watchList"><i class="ri-film-line ri-2x"></i> Watch List</h1>
+    <hr class="closure" size="2" color="white"> 
     <div class=formatWatch>
-        <div class="image watch">
+        <div class="image watch" style="margin-left: 3%;">
             <img src="images/deadpool.jpeg" alt="" width=330px>
             <div class="watch-content">
                 <div class="icons">
@@ -95,7 +105,7 @@
         </div>
 
         <div class="image watch">
-            <img src="images/gattaca.jpeg" alt="" width==330px>
+            <img src="images/gattaca.jpeg" alt="" width=330px>
             <div class="watch-content">
                 <div class="icons">
                     <a href="#" class="icon fa-solid fa-video"></a>
@@ -117,11 +127,12 @@
 
 
 
-    <h1>Top 5</h1>
-    <div class="top5">
-        <div class="images top">
+    <h1 style = "padding-top: 20px, 0" class="top_5"><i class="ri-film-line ri-2x"></i> Top 5</h1>
+    <hr class="closure" size="2" color="white"> 
+    <div class="top5" style="padding-top: 20px, 0">
+        <div class="images top" style="margin-left: 3%">
             <img src="images/deadpool.jpeg" alt="" width=250px>
-            <div class="top-content">
+            <div class="top-content" style="margin-left: 3%;">
                 <div class="iconstop">
                     <a href="#" class="icontop fa-solid fa-video"></a>
                     <a href="#" class="icontop fa-regular fa-heart"></a>
@@ -172,8 +183,9 @@
 
 
 
-    <h1>Recommended</h1>
-    <div class=recommend>
+    <h1 style = "padding-top: 20px, 0" class="recommended"><i class="ri-film-line ri-2x"></i> Recommended</h1>
+    <hr class="closure" size="2" color="white"> 
+    <div class="recommend" style="margin-left: 3%" style="padding:10px 0;">
         <div class="image watch">
             <img src="images/gattaca.jpeg" alt="" width=330px>
             <div class="watch-content">
@@ -194,21 +206,26 @@
         </div>
     </div>
 
-    <h1>Browse By Categories</h1>
+    <h1 style = "padding: 20px, 0" class="categoriesText"><i class="ri-film-line ri-2x"></i> Categories</h1>
+    <hr class="closure" size="2" color="white"> 
     <div class=categories>
-        <img src="images/action.jpeg" alt="Action" width="300" height="100">
-        <img src="images/comedy.png" alt="Comedy" width="300" height="100">
-        <img src="images/horror.jpeg" alt="Horror" width="300" height="100">
-        <img src="images/sci-fi.jpeg" alt="Sci-Fi" width="300" height="100">
+        <div style="margin-left: 3%" style="padding:20px 0;">
+            <img src="images/action.jpeg" alt="Action" width="300" height="100">
+            <img src="images/comedy.png" alt="Comedy" width="300" height="100">
+            <img src="images/horror.jpeg" alt="Horror" width="300" height="100">
+            <img src="images/sci-fi.jpeg" alt="Sci-Fi" width="300" height="100">
+        </div>
     </div>
 
-
-
-
-
-
-
-
+    <div id = "demoBar" class="demoBar" style="padding:20px 0;"><i class="ri-film-line ri-2x"></i> Demo
+        <hr class="closure" size="2" color="white">
+        <div style="padding:10px 0;">
+            <img class="demo" src, width="300" height = "100">
+            <img class="demo" src, width="300" height = "100">
+            <img class="demo" src, width="300" height = "100">
+            <img class="demo" src, width="300" height = "100">
+        </div>
+    </div>
 
     <div class="kefu_q1" style="right:5px;bottom:20px;">
         <ul>
