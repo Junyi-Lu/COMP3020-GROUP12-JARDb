@@ -109,7 +109,7 @@ window.onscroll = function () {
 };
 
 function display() {
-    if (document.documentElement.scrollTop > 20) {
+    if (document.documentElement.scrollTop > 400) {
         toTop.style.display = "block";
     } else {
         toTop.style.display = "none";
