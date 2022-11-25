@@ -1,5 +1,6 @@
 
-const ratingButton = document.querySelector(".ratingButton");const fiveStar = document.querySelector(".fiveStar");
+const ratingButton = document.querySelector(".ratingButton");
+const fiveStar = document.querySelector(".fiveStar");
 const fourStar = document.querySelector(".fourStar");
 const threeStar = document.querySelector(".threeStar");
 const twoStar = document.querySelector(".twoStar");
@@ -108,7 +109,7 @@ window.onscroll = function () {
 };
 
 function display() {
-    if (document.documentElement.scrollTop > 20) {
+    if (document.documentElement.scrollTop > 400) {
         toTop.style.display = "block";
     } else {
         toTop.style.display = "none";

@@ -11,15 +11,3 @@ function login() {
         return false;
     }
 }
-
-var input = document.getElementById("userpass");
-var button = document.getElementById("trigger")
-button.addEventListener('click', function () {
-    if (input.type === 'password') {
-        input.type = 'text';
-        button.className = 'ri-eye-line';
-    } else {
-        input.type = 'password';
-        button.className = 'ri-eye-off-line';
-    }
-})
