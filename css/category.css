@@ -105,6 +105,11 @@ body {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
+.images:hover{
+  background-color: var(--color-primary);
+}
+
 .images {
   padding: 2px 0;
   margin-left: 3%;
