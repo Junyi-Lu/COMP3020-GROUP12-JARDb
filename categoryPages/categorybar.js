@@ -13,20 +13,20 @@ function showList() {
         var li = document.createElement("li");
         a.innerHTML = res[i];
         if (res[i] == "deadpool") {
-            a.href = "moviePages/deadpool.html";
+            a.href = "../moviePages/deadpool.html";
             images.src = "../images/deadpool.jpeg";
         } else if (res[i] == "americansniper") {
-            a.href = "moviePages/main.html";
+            a.href = "../moviePages/main.html";
             images.src = "../images/americansniper.jpeg";
         } else if (res[i] == "gattaca") {
-            a.href = "moviePages/main.html";
+            a.href = "../moviePages/main.html";
             images.src = "../images/gattaca.jpeg";
 
         } else if (res[i] == "nope") {
-            a.href = "moviePages/main.html";
+            a.href = "../moviePages/main.html";
             images.src = "../images/nope.jpeg";
         } else {
-            a.href = "moviePages/main.html";
+            a.href = "../moviePages/main.html";
             images.src = "../images/thebatman.jpeg";
         }
         a.appendChild(images);
