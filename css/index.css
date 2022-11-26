@@ -419,6 +419,10 @@ ul#drop li:hover {
   height: 40px;
 }
 
+.categoriesPhoto:hover {
+  background-color: var(--color-primary);
+}
+
 .formatWatch {
   padding: 20px 0;
   display: flex;
