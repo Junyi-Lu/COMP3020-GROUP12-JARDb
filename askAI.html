@@ -5,12 +5,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="styleAI.css">
 
    
 </head>
 
 <body>
+    <div class="menu-bar">
+        <a href="index.html">
+            <h1 class="logo">JAR<span>Db.</span></h1>
+        </a>
+        <p>
+            <input id="searchID" onkeyup="search_movies()" type="text" maxlength="70" class="search-data"
+                placeholder="Search JARDb" , required>
+            <i id="searchBar" class="ri-search-line"></i>
+        </p>
+        <ul>
+            <li><a href="#">Categories <i id="fd" class="fas fa-caret-down"></i></a>
+                <div class="dropdown-menu">
+                    <ul>
+                        <li><a href="#">Movies<i id="fd" class="fas fa-caret-right"></i></a>
+                            <div class="dropdown-menu-1">
+                                <ul>
+                                    <li><a href="categoryPages/action.html">Action</a></li>
+                                    <li><a href="categoryPages/comedy.html">Comedy</a></li>
+                                    <li><a href="categoryPages/fantasy.html">Fantasy</a></li>
+                                    <li><a href="categoryPages/sciFi.html">Sci-Fi</a></li>
+                                    <li><a href="categoryPages/horror.html">Horror</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#">Watch<i id="fd" class="fas fa-caret-right"></i></a>
+                            <div class="dropdown-menu-2">
+                                <ul>
+                                    <li><a href="#">Watched</a></li>
+                                    <li><a href="#">Watching</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="askAI.html">AskAI<i class="ri-robot-line"></i></a></li>
+            <li><a href="login.html">Sign In<i class="ri-login-box-line"></i></a></li>
+        </ul>
+    </div>
 
     <p style="background-image: url('background.jpg')"></p>
     <div class="panel">
@@ -31,7 +71,7 @@
             <button class="option" id="op4">option4</button>
         </div>
         <div class="navigation" id="nav-container">
-        
+           
             <button class="next">Next</button>
         
 

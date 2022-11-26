@@ -139,7 +139,7 @@ body {
     padding: 5px;
     display: flex;
     justify-content: space-around;
-  
+
     font-family: 'Lato', sans-serif;
     vertical-align: baseline;
     background-color: transparent;
@@ -147,12 +147,15 @@ body {
 }
 
 .next {
-    width: 30vw;
-    height: 8vh;
+    width: 20vw;
+    height: 10vh;
     padding: 5px;
     font-size: 100%;
     font-family: 'Poppins', sans-serif;
     vertical-align: baseline;
+    position: relative;
+
+
 }
 
 

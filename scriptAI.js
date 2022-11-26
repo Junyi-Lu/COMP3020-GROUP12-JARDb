@@ -173,8 +173,8 @@ next.addEventListener("click", () => {
       
     }
     else if (click >= 4) {
-
-        window.open('https://perchance.org/youtube-video');
+		href = "moviePages/main.html"
+        window.location.replace(href);
     }
     
     
