@@ -30,36 +30,37 @@ body {
 
 .menu-bar {
   background-color: var(--color-black);
-  height: 80px;
+  height: 60px;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 5%;
   z-index: 1;
   position: relative;
 }
 
 .menu-bar p {
   position: relative;
+  top: 0px;
 }
 
 .menu-bar p i {
   position: absolute;
   top: calc(60px / 2);
-  right: 15px;
+  right: 10px;
   margin-top: -15px;
   line-height: 1;
   color: var(--color-black);
   cursor: pointer;
 }
 
-.menu-bar input[type="text"] {
+.menu-bar input[type="search"] {
   font: inherit;
   font-size: 14px;
-  width: 600px;
+  width: 350px;
   border: 0;
   outline: 0;
+  box-sizing: border-box;
   padding: 0 20px;
   line-height: 45px;
   border-radius: 10px;
@@ -75,6 +76,7 @@ body {
   position: relative;
   padding: 10px 30px;
 }
+
 .menu-bar ul li a {
   font-size: 20px;
   color: var(--color-white);
@@ -137,6 +139,48 @@ body {
   left: 150px;
   top: 0;
   background-color: var(--color-black);
+}
+
+p#selectedid {
+  display: inline-block;
+}
+
+ul#drop {
+  position: relative;
+  display: inline-block;
+  top: 17px;
+  right: 815px;
+  position: absolute;
+  list-style: none;
+  margin: 0;
+  width: 350px;
+  background-color: var(--color-black-1);
+  padding: 0;
+}
+
+ul#drop li {
+  text-align: left;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+}
+
+ul#drop li a {
+  margin: 0;
+  font-size: 20px;
+}
+
+ul#drop li a img {
+  width: 100%;
+  height: 10%;
+  display: list-item;
+  box-sizing: border-box;
+}
+
+ul#drop li:hover {
+  background-color: #57606f;
+  width: 100%;
 }
 
 .myFeatured {
@@ -207,7 +251,7 @@ body {
 }
 
 .kefu_q1 ul li i {
-  font-size: 27px;
+  font-size: 35px;
   color: #fff;
   background: var(--color-primary);
   border-radius: 20px;
@@ -373,6 +417,10 @@ body {
 
 .top-content:hover::before {
   height: 40px;
+}
+
+.categoriesPhoto:hover {
+  background-color: var(--color-primary);
 }
 
 .formatWatch {
