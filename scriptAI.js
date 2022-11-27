@@ -174,7 +174,7 @@ next.addEventListener("click", () => {
     }
     else if (click >= 4) {
 		href = "moviePages/main.html"
-        window.location.replace(href);
+        window.location.assign(href);
     }
     
     
