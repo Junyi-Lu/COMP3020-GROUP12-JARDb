@@ -19,7 +19,7 @@ body {
   /* background-color:#FAF0E5 ; */
 }
 
-.logo {
+.logo { 
   color: var(--color-white);
   font-size: 30px;
   padding-top: 5px;
