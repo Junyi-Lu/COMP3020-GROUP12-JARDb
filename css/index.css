@@ -147,7 +147,10 @@ p#selectedid {
 ul#drop {
   display: inline-block;
   list-style: none;
+  position: absolute;
   margin: 0;
+  left: 305px;
+  top: 50px;
   width: 400px;
   background-color: var(--color-black-1);
   padding: 0;
