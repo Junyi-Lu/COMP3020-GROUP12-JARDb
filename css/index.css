@@ -22,10 +22,17 @@ body {
 .logo {
   color: var(--color-white);
   font-size: 30px;
+  padding-top: 5px;
 }
 
 .logo span {
   color: var(--color-primary);
+}
+
+.search-container {
+  width: 100%;
+  height: 40px;
+  padding-left: 100px;
 }
 
 .menu-bar {
@@ -39,25 +46,10 @@ body {
   position: relative;
 }
 
-.menu-bar p {
-  position: relative;
-  top: 0px;
-}
-
-.menu-bar p i {
-  position: absolute;
-  top: calc(60px / 2);
-  right: 10px;
-  margin-top: -15px;
-  line-height: 1;
-  color: var(--color-black);
-  cursor: pointer;
-}
-
 .menu-bar input[type="search"] {
   font: inherit;
   font-size: 14px;
-  width: 350px;
+  width: 400px;
   border: 0;
   outline: 0;
   box-sizing: border-box;
@@ -69,12 +61,19 @@ body {
 .menu-bar ul {
   list-style: none;
   display: flex;
+  padding-top: 1px;
 }
 
 .menu-bar ul li {
   /* text-align: center; */
   position: relative;
-  padding: 10px 30px;
+  padding: 10px 40px;
+}
+
+.down {
+  float: right;
+  margin-left: 10px;
+  padding-top: 3px;
 }
 
 .menu-bar ul li a {
@@ -90,8 +89,8 @@ body {
 
 .fas {
   float: right;
-  margin-left: 10px;
-  padding-top: 3px;
+  margin-left: 5px;
+  padding-top: 0px;
 }
 
 /* dropdown menu style */
@@ -102,14 +101,14 @@ body {
 .menu-bar ul li:hover .dropdown-menu {
   display: block;
   position: absolute;
-  left: 0;
+  left: 20px;
   top: 100%;
   background-color: var(--color-black);
 }
 
 .menu-bar ul li:hover .dropdown-menu ul {
-  display: block;
-  margin: 10px;
+  display: inline-block;
+  margin: 5px;
 }
 
 .menu-bar ul li:hover .dropdown-menu ul li {
@@ -122,10 +121,10 @@ body {
 }
 
 .dropdown-menu ul li:hover .dropdown-menu-1 {
-  display: block;
+  display: inline-block;
   position: absolute;
   left: 150px;
-  top: 0;
+  top: -10%;
   background-color: var(--color-black);
 }
 
@@ -137,7 +136,7 @@ body {
   display: block;
   position: absolute;
   left: 150px;
-  top: 0;
+  top: -10%;
   background-color: var(--color-black);
 }
 
@@ -146,14 +145,10 @@ p#selectedid {
 }
 
 ul#drop {
-  position: relative;
   display: inline-block;
-  top: 17px;
-  right: 815px;
-  position: absolute;
   list-style: none;
   margin: 0;
-  width: 350px;
+  width: 400px;
   background-color: var(--color-black-1);
   padding: 0;
 }
@@ -174,7 +169,7 @@ ul#drop li a {
 ul#drop li a img {
   width: 100%;
   height: 10%;
-  display: list-item;
+  display: inline-block;
   box-sizing: border-box;
 }
 
