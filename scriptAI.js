@@ -1,7 +1,7 @@
 // Questions will be asked
 const Questions = [{
 		id: 0,
-		q: "Please select a language for the movie.",
+		q: "Welcome to ASK AI!\n You will be recommended a movie using artificical technology based on your answers.\n Please select a language for your movie to begin.",
 		a: [{ text: "English" },
 			{ text: " 中文維基百科"},
 			{ text: "עִבְרִית" },
@@ -173,8 +173,8 @@ next.addEventListener("click", () => {
       
     }
     else if (click >= 4) {
-
-        window.open('https://perchance.org/youtube-video');
+		href = "moviePages/main.html"
+        window.location.assign(href);
     }
     
     
