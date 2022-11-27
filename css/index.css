@@ -181,6 +181,12 @@ ul#drop li:hover {
   width: 100%;
 }
 
+.fas {
+  float: right;
+  margin-left: 10px;
+  padding-top: 3px;
+}
+
 .myFeatured {
   display: none;
 }
