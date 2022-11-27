@@ -5,7 +5,7 @@ body {
     margin: 0;
     width: 100vw;
     height: 100vh;
-    font-family: 'Poppins', sans-serif;
+    font-family:  sans-serif;
     vertical-align: baseline;
 
 
@@ -21,7 +21,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: 'Poppins', sans-serif;
+    font-family:  sans-serif;
     vertical-align: baseline;
 
 }
@@ -57,7 +57,7 @@ body {
 
 
     text-align: center;
-    font-family: 'Poppins', sans-serif;
+    font-family:  sans-serif;
     vertical-align: baseline;
     background-color: #000000;
     color: #ffffff;
@@ -72,7 +72,7 @@ body {
     background-image: url('background.jpg');
     background-size: 1500px;
     background-color: rgba(19, 21, 25, 0.5);
-    font-family: 'Poppins', sans-serif;
+    font-family:  sans-serif;
     vertical-align: baseline;
 
 }
@@ -83,7 +83,7 @@ body {
     width: 80vw;
     height: 10vh;
     text-align: center;
-    font-family: 'Poppins', sans-serif;
+    font-family:  sans-serif;
     vertical-align: baseline;
 }
 
@@ -98,7 +98,7 @@ body {
     height: 20vh;
 
     background-color: transparent;
-    font-family: 'Poppins', sans-serif;
+    font-family:  sans-serif;
     vertical-align: baseline;
 
 
@@ -118,7 +118,7 @@ body {
     font-size: 100%;
     background-color: transparent;
     border-radius: 20%;
-    font-family: 'Poppins', sans-serif;
+    font-family:  sans-serif;
 
     color: #ffffff;
     border: solid 1px #ffffff;
@@ -151,7 +151,7 @@ body {
     height: 10vh;
     padding: 5px;
     font-size: 100%;
-    font-family: 'Poppins', sans-serif;
+    font-family:  sans-serif;
     vertical-align: baseline;
     position: relative;
 
@@ -163,7 +163,7 @@ body {
 .next {
     color: white;
     background-color: #BF3325;
-    font-family: 'Poppins', sans-serif;
+    font-family:  sans-serif;
     vertical-align: baseline;
 }
 
@@ -173,7 +173,7 @@ body {
     height: 8vh;
     padding: 5px;
     font-size: 100%;
-    font-family: 'Poppins', sans-serif;
+    font-family:  sans-serif;
     vertical-align: baseline;
 }
 
@@ -182,7 +182,7 @@ body {
 .watch {
     color: white;
     background-color: #BF3325;
-    font-family: 'Poppins', sans-serif;
+    font-family:  sans-serif;
     vertical-align: baseline;
 
 }
