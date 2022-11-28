@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="videoPageStyle.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- Slider Library -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <title>Video page</title>
+</head>
+
+<body>
+    <div class="menu-bar">
+        <a href="../index.html">
+            <h1 class="logo" style="padding-left:100px">JAR<span>Db.</span></h1>
+        </a>
+        <div class="search-container">
+            <input type="search" maxlength="70" class="search-data" placeholder="Search JARDb" , required>
+            <p id="selectedid"></p>
+        </div>
+        <ul>
+            <li><a href="../index.html">Home<i class="ri-home-3-line"></i></a></li>
+            <li><a href="#">Categories</a>
+                <div class="dropdown-menu">
+                    <ul>
+                        <li><a href="#">Movies<i id="fd" class="fas fa-caret-right"></i></a>
+                            <div class="dropdown-menu-1">
+                                <ul>
+                                    <li><a href="../categoryPages/action.html">Action</a></li>
+                                    <li><a href="../categoryPages/comedy.html">Comedy</a></li>
+                                    <li><a href="../categoryPages/fantasy.html">Fantasy</a></li>
+                                    <li><a href="../categoryPages/sciFi.html">Sci-Fi</a></li>
+                                    <li><a href="../categoryPages/horror.html">Horror</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#">Watch<i id="fd" class="fas fa-caret-right"></i></a>
+                            <div class="dropdown-menu-2">
+                                <ul>
+                                    <li><a href="#">Watched</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="../askAI.html">AskAI<i class="ri-robot-line"></i></a></li>
+            <li><a href="../userCard.html">User<i class=""><i class="ri-user-5-fill"></i></a></li>
+        </ul>
+    </div>
+
+    <iframe width="100%" height="100%"
+        src="https://www.youtube.com/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&loop=1%22%3E">
+    </iframe>
+
+
+    <!--
+        <div class = "videoPlayerBlock">
+            <video id = "movie" width = 100%>
+                <source src = "sampleVideo.mp4" type = "video/mp4">
+            </video>
+        </div> -->
+
+    <div class="basicInfo">
+        <h1>
+            Lorem ipsum dolor sit amet
+        </h1>
+        <div class="categories">
+            <a href="otherPage.html">
+                <button class="category">
+                    Category1
+                </button>
+            </a>
+
+            <a href="otherPage.html">
+                <button class="category">
+                    Category2
+                </button>
+            </a>
+        </div>
+    </div>
+
+    <div class="ratingBlock">
+        <h2 class="ratingHeading">
+            Rating
+        </h2>
+        <div class="ratingDropDown">
+            <button class="ratingButton">
+                &#9733
+            </button>
+            <p class="totalRating">
+                #.#/5
+            </p>
+            <br>
+            <div class="ratingOptions">
+                <div class="oneStar">&#9733</div>
+                <div class="twoStar">&#9733</div>
+                <div class="threeStar">&#9733</div>
+                <div class="fourStar">&#9733</div>
+                <div class="fiveStar">&#9733</div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="information">
+        <p style="padding-left: 5%; padding-right: 5%;" class="synopsis">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dictum tortor vitae blandit egestas.
+            Maecenas ex velit, commodo pretium eleifend et, facilisis quis neque. Nulla sed aliquam nunc. Aliquam
+            tristique urna id condimentum euismod. In condimentum venenatis lectus, dapibus iaculis mauris molestie et.
+            Fusce id iaculis nisi. Quisque at tristique odio. Suspendisse maximus mi et justo bibendum accumsan.
+            Pellentesque interdum sagittis convallis. In hac habitasse platea dictumst. Nullam sem metus, semper eget
+            laoreet sed, euismod a erat.
+        </p>
+
+        <button class="more">
+            more
+        </button>
+    </div>
+
+    <h2>
+        Next episode
+    </h2>
+    <div class="nextEpisodeBlock">
+        <img class="thumbnail" src="sample.jpg">
+        <p class="nextEpisodeInfo">
+            S# E#<br>
+            Episode name
+        </p>
+        <button class="moreEpisodes">
+            <div class="more">
+                More
+            </div>
+            <i class="ri-layout-grid-fill"></i> <!-- Might Change to an image due to sizing issues -->
+    </div>
+    </div>
+
+    <h2>
+        Cast
+    </h2>
+    <div class="actorGrid">
+        <div class="actor">
+            <img class="actorImage" src="bob.jpeg">
+            <div class="actorInfo">
+                <p class="characterName">Jimmy McGill, &emsp; Bob Odenkirk</p>
+                <p class="role">Main</p>
+            </div>
+        </div>
+        <div class="actor">
+            <img class="actorImage" src="rhea.jpeg">
+            <div class="actorInfo">
+                <p class="characterName">Kim Wexler, &emsp; Rhea Seehorn</p>
+                <p class="role">Main</p>
+            </div>
+        </div>
+        <div class="actor">
+            <img class="actorImage" src="michael.jpeg">
+            <div class="actorInfo">
+                <p class="characterName">Chuck McGill, &emsp; Michael McKean</p>
+                <p class="role">Supporting</p>
+            </div>
+        </div>
+
+    </div>
+    <a href="otherPage.html">
+        <h2>
+            Related
+        </h2>
+    </a>
+
+    <!-- Slider main container -->
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+                <a href="otherPage.html">
+                    <img class="relatedImage" src="Related/americansniper.jpeg">
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="otherPage.html">
+                    <img class="relatedImage" src="Related/deadpool.jpeg">
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="otherPage.html">
+                    <img class="relatedImage" src="Related/nope.jpeg">
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="otherPage.html">
+                    <img class="relatedImage" src="Related/thebatman.jpeg">
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="otherPage.html">
+                    <img class="relatedImage" src="Related/jurassicpark.jpg">
+                </a>
+            </div>
+        </div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+
+    <div class="kefu_q1" style="right:5px;bottom:20px;">
+        <ul>
+            <li class="q1_top" id="get_top"><i id="up" class="ri-arrow-up-line"></i></li>
+        </ul>
+    </div>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/6c9eb2e773.js" crossorigin="anonymous"></script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

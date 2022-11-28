@@ -1,0 +1,49 @@
+.swiper
+{
+    width: 100%;
+    z-index: 0;
+}
+
+.swiper-slide 
+{
+    text-align: center;
+    font-size: 18px;
+    background: gray;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-pagination-bullet 
+{ 
+    background-color: white;
+}
+
+.swiper-button-next, .swiper-button-prev
+{
+    color: white;
+    opacity: 75%;
+}
+
+.swiper-button-next:hover, .swiper-button-prev:hover
+{
+    opacity: 100%;
+}
+
+.swiper-link
+{
+    display: inline-flex;   /* Gets rid of bar underneath image */
+    width: 100%; 
+    height: 100%;
+}
