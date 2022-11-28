@@ -390,7 +390,7 @@ ul#drop li:hover {
   color: #2c3e50;
   font-size: 20px;
   margin: 0 5px;
-  transform: translateY(50px);
+  transform: translateY(35px);
 }
 
 .images:hover .icontop {
@@ -464,7 +464,7 @@ ul#drop li:hover {
   word-wrap: break-word;
 }
 
-.watchList,
+.watchListHead,
 .top_5,
 .recommended,
 .categoriesText,
@@ -498,4 +498,65 @@ ul#drop li:hover {
 
 .demo {
   border-image: round;
+}
+
+
+.recom {
+  position: relative;
+  transform: translate(1%, -3%);
+}
+
+.recom-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.iconsrecom {
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+}
+
+.iconrecom {
+  text-decoration: none;
+  color: #2c3e50;
+  font-size: 20px;
+  margin: 0 10px;
+  transform: translateY(30px);
+}
+
+.image:hover .iconrecom {
+  transform: translateY(0px);
+}
+
+.iconrecom:nth-child(1) {
+  transition: transform 0.4s 0.05s, color 0.4s;
+}
+.iconrecom:nth-child(2) {
+  transition: transform 0.4s 0.1s, color 0.4s;
+}
+
+.iconrecom:hover {
+  color: #c0392b;
+}
+
+.recom-content::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.7);
+  width: 100%;
+  height: 0px;
+  clip-path: polygon(0 100%, 100% 0, 100% 100%);
+  transition: 0.5s;
+}
+
+.recom-content:hover::before {
+  height: 50px;
 }
