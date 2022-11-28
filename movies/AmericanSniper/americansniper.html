@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link rel = "stylesheet" href = "../../slider/slider.css">
+    <link rel = "stylesheet" href="../sharedFiles/videoPageStyle.css">
+    <title>American Sniper</title>
+</head>
+
+<body>
+    <div class="menu-bar">
+        <a href="../../index.html">
+            <h1 class="logo" style="padding-left:100px">JAR<span>Db.</span></h1>
+        </a>
+        <div class="search-container">
+            <input type="search" maxlength="70" class="search-data" placeholder="Search JARDb" , required>
+            <p id="selectedid"></p>
+        </div>
+        <ul>
+            <li><a href="../../index.html">Home<i class="ri-home-3-line"></i></a></li>
+            <li><a href="#">Categories </a>
+                <div class="dropdown-menu">
+                    <ul>
+                        <li><a href="#">Movies<i id="fd" class="fas fa-caret-right"></i></a>
+                            <div class="dropdown-menu-1">
+                                <ul>
+                                    <li><a href="../../categoryPages/action.html">Action</a></li>
+                                    <li><a href="../../categoryPages/comedy.html">Comedy</a></li>
+                                    <li><a href="../../categoryPages/fantasy.html">Fantasy</a></li>
+                                    <li><a href="../../categoryPages/sciFi.html">Sci-Fi</a></li>
+                                    <li><a href="../../categoryPages/horror.html">Horror</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#">Watch<i id="fd" class="fas fa-caret-right"></i></a>
+                            <div class="dropdown-menu-2">
+                                <ul>
+                                    <li><a href="#">Watched</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li><a id=askAI href="../../askAI.html" title="Answer some questions and get an AI to suggest a movie.">AskAI<i
+                        class="ri-robot-line"></i></a></li>
+            <li><a href="../../userCard.html">User<i class=""><i class="ri-user-5-fill"></i></a></li>
+        </ul>
+    </div>
+
+    <div class="videoPlayerBlock">
+        <video controls width = 100%>
+            <source src = "../sharedFiles/sampleVideo.mp4" type = "video/mp4">
+        </video>
+    </div>
+
+    <div class = "informationWrapper">
+        <div class="primaryInformation">
+            <div class="basicInfo">
+                <div class = "movieTitle">
+                    <h1>
+                        American Sniper
+                    </h1>
+                </div>
+                <div class = "watchLaterButton">
+                    <a id=watch1 class="icon fa-regular fa-heart"></a>  
+                </div>          
+            </div>
+
+            <div class="ratingBlock">
+                <h2 class="ratingHeading">
+                    Rating
+                </h2>
+                <div class="ratingDropDown">
+                    <button class="ratingButton">
+                        &#9733
+                    </button>
+                    <p class="totalRating">
+                        3.9/5
+                    </p>
+                    <br>
+                    <div class="ratingOptions">
+                        <div class="oneStar">&#9733</div>
+                        <div class="twoStar">&#9733</div>
+                        <div class="threeStar">&#9733</div>
+                        <div class="fourStar">&#9733</div>
+                        <div class="fiveStar">&#9733</div>
+                    </div>
+                </div>
+            </div>
+            <div class="categories">
+                <a href="../../categoryPages/action.html">
+                    <button class="category">
+                        Action
+                    </button>
+                </a>
+            </div>
+        </div>
+
+        <div class="information">
+            <p class="synopsis">
+                American Sniper is a 2014 American biographical war drama film 
+                directed by Clint Eastwood and written by Jason Hall. It is loosely 
+                based on the memoir American Sniper (2012) by Chris Kyle, with Scott 
+                McEwen and Jim DeFelice. The film follows the life of Kyle, who 
+                became the deadliest marksman in U.S. military history with 255 
+                kills from four tours in the Iraq War, 160 of which were officially 
+                confirmed by the Department of Defense. Although Kyle was 
+                celebrated for his military successes, his tours of duty took a 
+                heavy toll on his personal and family life. The film was produced 
+                by Eastwood, Robert Lorenz, Andrew Lazar, Bradley Cooper, and Peter 
+                Morgan. It stars Cooper as Kyle and Sienna Miller as his wife Taya, 
+                with Luke Grimes, Jake McDorman, Cory Hardrict, Kevin Lacz, Navid 
+                Negahban, and Keir O'Donnell in supporting roles.
+            </p>
+        </div>
+
+        <h1>
+            Trivia
+        </h1>
+        <hr class="videoPageClosure" size="2" color="white">
+        <div class = "triviaBlock">
+            <div class = "triviaImage">
+                <img src = "factImage.jpg" style = "width: 100%; display: block;">
+            </div>
+            <div class = "triviaInformation">
+                <h2 class = "triviaText">
+                    Did you know?
+                </h2>
+                <br>
+                <p class = "triviaText">
+                    American Sniper grossed $350.1 million in North America and 
+                    $197 million in other territories for a worldwide total of $547.1 
+                    million, against a budget of around $58 million. Calculating in 
+                    all expenses and revenues, Deadline Hollywood estimated that the 
+                    film made a profit of $243 million, making it the second-most 
+                    profitable film of 2014 only behind Paramount's Transformers: 
+                    Age of Extinction.[38] Worldwide, it is the highest-grossing war 
+                    film of all time (breaking Saving Private Ryan's record) and
+                    Eastwood's highest-grossing film to date. It is the seventh 
+                    R-rated film to gross over $500 million.
+                </p>
+            </div>
+        </div>
+
+        <h1>
+            Cast
+        </h1>
+        <hr class="videoPageClosure" size="2" color="white">
+
+        <div class="actorGrid">
+            <div class="actor">
+                <img class="actorImage" src="Actors/bradley.jpg">
+                <div class="actorInfo">
+                    <p class="characterName">Chris Kyle <br> Bradley Cooper</p>
+                    <p class="role">Main</p>
+                </div>
+            </div>
+            <div class="actor">
+                <img class="actorImage" src="Actors/sienna.jpg">
+                <div class="actorInfo">
+                    <p class="characterName">Taya <br> Sienna Miller</p>
+                    <p class="role">Main</p>
+                </div>
+            </div>
+            <div class="actor">
+                <img class="actorImage" src="Actors/sammy.jpg">
+                <div class="actorInfo">
+                    <p class="characterName">Mustafa <br> Sammy Sheik</p>
+                    <p class="role">Supporting</p>
+                </div>
+            </div>
+            <div class="actor">
+                <img class="actorImage" src="Actors/luke.jpg">
+                <div class="actorInfo">
+                    <p class="characterName">Marc Lee <br> Luke Grimes</p>
+                    <p class="role">Supporting</p>
+                </div>
+            </div>
+            <div class="actor">
+                <img class="actorImage" src="Actors/keir.jpg">
+                <div class="actorInfo">
+                    <p class="characterName">Jeff Kyle <br> Keir O'Donnell</p>
+                    <p class="role">Supporting</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <h1>
+            More like this
+        </h1>
+        <hr class="videoPageClosure" size="2" color="white">
+        <div class = "swiper fourColSwiper">
+            <div class = "swiper-wrapper">
+
+                <div class = "swiper-slide">
+                    <img class = "swiper-image" src="../../images/deadpool.jpeg">
+                    <div class= "relatedImage relatedWatch">
+                        <div class="watch-content">
+                            <div class="icons">
+                                <a href="../Deadpool/deadpool.html" class="icon fa-solid fa-video"></a>
+                                <a id=watch2 class="icon fa-regular fa-heart"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <img class="swiper-image" src="../../images/thebatman.jpeg">
+                    <div class= "relatedImage relatedWatch">
+                        <div class="watch-content">
+                            <div class="icons">
+                                <a href="../TheBatman/theBatman.html" class="icon fa-solid fa-video"></a>
+                                <a id=watch3 class="icon fa-regular fa-heart"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <a href = "../sharedFiles/otherPage.html">
+                        <img class="swiper-image" src="../../images/avengersEndGame.jpeg">
+                    </a>
+
+                    <div class= "relatedImage relatedWatch">
+                        <div class="watch-content">
+                            <div class="icons">
+                                <a href="../template/template.html" class="icon fa-solid fa-video"></a>
+                                <a id=watch4 class="icon fa-regular fa-heart"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="swiper-slide">
+                    <a href = "../sharedFiles/otherPage.html">
+                        <img class="swiper-image" src="../../images/dune.jpeg">
+                    </a>
+
+                    <div class= "relatedImage relatedWatch">
+                        <div class="watch-content">
+                            <div class="icons">
+                                <a href="../template/template.html" class="icon fa-solid fa-video"></a>
+                                <a id=watch5 class="icon fa-regular fa-heart"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <a href = "../sharedFiles/otherPage.html">
+                        <img class="swiper-image" src="../../images/blackPanther1.jpg">
+                    </a>
+
+                    <div class= "relatedImage relatedWatch">
+                        <div class="watch-content">
+                            <div class="icons">
+                                <a href="../template/template.html" class="icon fa-solid fa-video"></a>
+                                <a id=watch6 class="icon fa-regular fa-heart"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-button-prev">
+                <div class = "arrow">&#10094;</div>
+            </div>
+            <div class="swiper-button-next">
+                <div class = "arrow">&#10095;</div>
+            </div>
+        </div>
+        
+    </div>
+
+
+    <div class="kefu_q1" style="right:5px;bottom:20px;">
+        <ul>
+            <li class="q1_top" id="get_top"><i id="up" class="ri-arrow-up-line"></i></li>
+        </ul>
+    </div>
+    
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src = "../../slider/slider.js"></script>
+    <script src = "../../js/script.js"></script>
+    <script src= "../sharedFiles/ratingScript.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://kit.fontawesome.com/6c9eb2e773.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

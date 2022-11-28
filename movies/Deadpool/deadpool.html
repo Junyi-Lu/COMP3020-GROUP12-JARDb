@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link rel = "stylesheet" href = "../../slider/slider.css">
+    <link rel = "stylesheet" href="../sharedFiles/videoPageStyle.css">
+    <title>Deadpool</title>
+</head>
+
+<body>
+    <div class="menu-bar">
+        <a href="../../index.html">
+            <h1 class="logo" style="padding-left:100px">JAR<span>Db.</span></h1>
+        </a>
+        <div class="search-container">
+            <input type="search" maxlength="70" class="search-data" placeholder="Search JARDb" , required>
+            <p id="selectedid"></p>
+        </div>
+        <ul>
+            <li><a href="../../index.html">Home<i class="ri-home-3-line"></i></a></li>
+            <li><a href="#">Categories </a>
+                <div class="dropdown-menu">
+                    <ul>
+                        <li><a href="#">Movies<i id="fd" class="fas fa-caret-right"></i></a>
+                            <div class="dropdown-menu-1">
+                                <ul>
+                                    <li><a href="../../categoryPages/action.html">Action</a></li>
+                                    <li><a href="../../categoryPages/comedy.html">Comedy</a></li>
+                                    <li><a href="../../categoryPages/fantasy.html">Fantasy</a></li>
+                                    <li><a href="../../categoryPages/sciFi.html">Sci-Fi</a></li>
+                                    <li><a href="../../categoryPages/horror.html">Horror</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#">Watch<i id="fd" class="fas fa-caret-right"></i></a>
+                            <div class="dropdown-menu-2">
+                                <ul>
+                                    <li><a href="#">Watched</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li><a id=askAI href="../../askAI.html" title="Answer some questions and get an AI to suggest a movie.">AskAI<i
+                        class="ri-robot-line"></i></a></li>
+            <li><a href="../../userCard.html">User<i class=""><i class="ri-user-5-fill"></i></a></li>
+        </ul>
+    </div>
+
+    <div class="videoPlayerBlock">
+        <video controls width = 100%>
+            <source src = "../sharedFiles/sampleVideo.mp4" type = "video/mp4">
+        </video>
+    </div>
+
+    <div class = "informationWrapper">
+        <div class="primaryInformation">
+            <div class="basicInfo">
+                <div class = "movieTitle">
+                    <h1>
+                        Deadpool
+                    </h1>
+                </div>
+                <div class = "watchLaterButton">
+                    <a id=watch1 class="icon fa-regular fa-heart"></a>  
+                </div>          
+            </div>
+
+            <div class="ratingBlock">
+                <h2 class="ratingHeading">
+                    Rating
+                </h2>
+                <div class="ratingDropDown">
+                    <button class="ratingButton">
+                        &#9733
+                    </button>
+                    <p class="totalRating">
+                        4.1/5
+                    </p>
+                    <br>
+                    <div class="ratingOptions">
+                        <div class="oneStar">&#9733</div>
+                        <div class="twoStar">&#9733</div>
+                        <div class="threeStar">&#9733</div>
+                        <div class="fourStar">&#9733</div>
+                        <div class="fiveStar">&#9733</div>
+                    </div>
+                </div>
+            </div>
+            <div class="categories">
+                <a href="../../categoryPages/action.html">
+                    <button class="category">
+                        Action
+                    </button>
+                </a>
+
+                <a href="../../categoryPages/comedy.html">
+                    <button class="category">
+                        Comedy
+                    </button>
+                </a>
+            </div>
+        </div>
+
+        <div class="information">
+            <p class="synopsis">
+                Deadpool is a 2016 American superhero film based on the Marvel Comics character of the same name.
+                Distributed by 20th Century Fox, it is a spin-off in the X-Men film series and the eighth installment
+                overall. Directed by Tim Miller (in his feature directorial debut) and written by Rhett Reese and Paul
+                Wernick, it stars Ryan Reynolds in the title role alongside Morena Baccarin, Ed Skrein, T. J. Miller,
+                Gina Carano, and Brianna Hildebrand. In the film, Wade Wilson hunts the man who gave him mutant
+                abilities and a scarred physical appearance, becoming the antihero Deadpool.
+            </p>
+        </div>
+
+        <h1>
+            Trivia
+        </h1>
+        <hr class="videoPageClosure" size="2" color="white">
+        <div class = "triviaBlock">
+            <div class = "triviaImage">
+                <img src = "factImage.jpg" style = "width: 100%; display: block;">
+            </div>
+            <div class = "triviaInformation">
+                <h2 class = "triviaText">
+                    Did you know?
+                </h2>
+                <br>
+                <p class = "triviaText">
+                    By March 2005, Reynolds learned that Fox had expressed interest in a film featuring Deadpool.
+                    The character was set to make a cameo appearance in the 2009 film 
+                    X-Men Origins: Wolverine, with Reynolds cast in the part. His role was expanded 
+                    during the film's production.[35] Katz was an executive at Fox at that point, and
+                    said that Deadpool was "nicely set up to be explored in his own way" in a future 
+                    film. The film's portrayal deviates from the original comic character, 
+                    "imbuing him with several superpowers and sewing his mouth shut".
+                </p>
+            </div>
+        </div>
+
+        <h1>
+            Cast
+        </h1>
+        <hr class="videoPageClosure" size="2" color="white">
+
+        <div class="actorGrid">
+            <div class="actor">
+                <img class="actorImage" src="Actors/ryan.jpeg">
+                <div class="actorInfo">
+                    <p class="characterName">Deadpool <br> Ryan Reynolds</p>
+                    <p class="role">Main</p>
+                </div>
+            </div>
+            <div class="actor">
+                <img class="actorImage" src="Actors/morcena.jpeg">
+                <div class="actorInfo">
+                    <p class="characterName">Vanessa <br> Morena Baccarin</p>
+                    <p class="role">Main</p>
+                </div>
+            </div>
+            <div class="actor">
+                <img class="actorImage" src="Actors/gina.jpg">
+                <div class="actorInfo">
+                    <p class="characterName">Angel Dust <br> Gina Carano</p>
+                    <p class="role">Supporting</p>
+                </div>
+            </div>
+            <div class="actor">
+                <img class="actorImage" src="Actors/taylor.jpeg">
+                <div class="actorInfo">
+                    <p class="characterName">Meghan Orlovsky <br> Taylor Hickson</p>
+                    <p class="role">Supporting</p>
+                </div>
+            </div>
+        </div>
+        
+        <h1>
+            More like this
+        </h1>
+        <hr class="videoPageClosure" size="2" color="white">
+        <div class = "swiper fourColSwiper">
+            <div class = "swiper-wrapper">
+
+                <div class = "swiper-slide">
+                    <img class = "swiper-image" src="../../images/americansniper.jpeg">
+                    <div class= "relatedImage relatedWatch">
+                        <div class="watch-content">
+                            <div class="icons">
+                                <a href="../AmericanSniper/americansniper.html" class="icon fa-solid fa-video"></a>
+                                <a id=watch2 class="icon fa-regular fa-heart"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <img class="swiper-image" src="../../images/thebatman.jpeg">
+                    <div class= "relatedImage relatedWatch">
+                        <div class="watch-content">
+                            <div class="icons">
+                                <a href="../TheBatman/theBatman.html" class="icon fa-solid fa-video"></a>
+                                <a id=watch3 class="icon fa-regular fa-heart"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <a href = "../sharedFiles/otherPage.html">
+                        <img class="swiper-image" src="../../images/avengersEndGame.jpeg">
+                    </a>
+
+                    <div class= "relatedImage relatedWatch">
+                        <div class="watch-content">
+                            <div class="icons">
+                                <a href="../template/template.html" class="icon fa-solid fa-video"></a>
+                                <a id=watch4 class="icon fa-regular fa-heart"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="swiper-slide">
+                    <a href = "../sharedFiles/otherPage.html">
+                        <img class="swiper-image" src="../../images/dune.jpeg">
+                    </a>
+
+                    <div class= "relatedImage relatedWatch">
+                        <div class="watch-content">
+                            <div class="icons">
+                                <a href="../template/template.html" class="icon fa-solid fa-video"></a>
+                                <a id=watch5 class="icon fa-regular fa-heart"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <a href = "../sharedFiles/otherPage.html">
+                        <img class="swiper-image" src="../../images/blackPanther1.jpg">
+                    </a>
+
+                    <div class= "relatedImage relatedWatch">
+                        <div class="watch-content">
+                            <div class="icons">
+                                <a href="../template/template.html" class="icon fa-solid fa-video"></a>
+                                <a id=watch6 class="icon fa-regular fa-heart"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-button-prev">
+                <div class = "arrow">&#10094;</div>
+            </div>
+            <div class="swiper-button-next">
+                <div class = "arrow">&#10095;</div>
+            </div>
+        </div>
+        
+    </div>
+
+
+    <div class="kefu_q1" style="right:5px;bottom:20px;">
+        <ul>
+            <li class="q1_top" id="get_top"><i id="up" class="ri-arrow-up-line"></i></li>
+        </ul>
+    </div>
+    
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src = "../../slider/slider.js"></script>
+    <script src = "../../js/script.js"></script>
+    <script src= "../sharedFiles/ratingScript.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://kit.fontawesome.com/6c9eb2e773.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
