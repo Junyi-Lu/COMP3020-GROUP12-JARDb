@@ -38,7 +38,7 @@
                                 </ul>
                             </div>
                         </li>
-                        <li><a href="#">WatchList</a>
+                        <li><a href="#">Watch List</a>
                         </li>
                     </ul>
                 </div>
@@ -57,38 +57,43 @@
         </ol>
     </div>
 
-    <div class="swiper">
+    <div class="swiper singleSwiper">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-                <a href="moviePages/deadpool.html" class="swiper-link">
+                <a href="movies/Deadpool/deadpool.html" class="swiper-link">
                     <img src="images/deadpool.jpeg" style="width:100%">
                 </a>
             </div>
             <div class="swiper-slide">
-                <a href="moviePages/main.html" class="swiper-link">
+                <a href="movies/TheBatman/theBatman.html" class="swiper-link">
                     <img src="images/thebatman.jpeg" style="width:100%">
                 </a>
             </div>
             <div class="swiper-slide">
-                <a href="moviePages/main.html" class="swiper-link">
+                <a href="movies/AmericanSniper/americansniper.html" class="swiper-link">
                     <img src="images/americansniper.jpeg" style="width:100%">
                 </a>
             </div>
         </div>
 
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-prev">
+            <div class = "arrow">&#10094;</div>
+        </div>
+        <div class="swiper-button-next">
+            <div class = "arrow">&#10095;</div>
+        </div>
+
         <div class="swiper-pagination"></div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="slider/slider.js"></script>
     <br>
 
-    <h1 style="padding: 20px, 0" class="watchListHead"><i class="ri-film-line ri-2x"></i> Watch List</h1>
+    <h1 style="padding: 30px, 0" class="watchListHead"><i class="ri-film-line ri-2x"></i> Watch List</h1>
     <hr class="closure" size="2" color="white">
     <div class=formatWatch>
-        <div class="image watch" style="margin-left: 3%;">
-            <a class="watchList" href><img class="watchIMG" src alt="" width=330px></a>
+        <div class="image watch" style="margin-left: 4%;">
+            <a class="watchList" href><img class="watchIMG" src alt="" width=360px></a>
             <div class="watch-content">
                 <div class="icons">
                     <a href="#" class="icon fa-solid fa-video"></a>
@@ -97,7 +102,7 @@
         </div>
 
         <div class="image watch">
-            <a class="watchList" href><img class="watchIMG" src alt="" width=330px></a>
+            <a class="watchList" href><img class="watchIMG" src alt="" width=360px></a>
             <div class="watch-content">
                 <div class="icons">
                     <a href="#" class="icon fa-solid fa-video"></a>
@@ -106,7 +111,7 @@
         </div>
 
         <div class="image watch">
-            <a class="watchList" href><img class="watchIMG" src alt="" width=330px></a>
+            <a class="watchList" href><img class="watchIMG" src alt="" width=360px></a>
             <div class="watch-content">
                 <div class="icons">
                     <a href="#" class="icon fa-solid fa-video"></a>
@@ -115,13 +120,15 @@
         </div>
 
         <div class="image watch">
-            <a class="watchList" href><img class="watchIMG" src alt="" width=330px></a>
+            <a class="watchList" href><img class="watchIMG" src alt="" width=360px></a>
             <div class="watch-content">
                 <div class="icons">
                     <a href="#" class="icon fa-solid fa-video"></a>
                 </div>
             </div>
         </div>
+        <a id=previousWatch>&#10094;</a>
+        <a id=nextWatch>&#10095;</a>
     </div>
 
 
@@ -133,7 +140,7 @@
             <img src="images/deadpool.jpeg" alt="" width=250px>
             <div class="top-content" style="margin-left: 3%;">
                 <div class="iconstop">
-                    <a href="moviePages/deadpool.html" class="icontop fa-solid fa-video"
+                    <a href="movies/Deadpool/deadpool.html" class="icontop fa-solid fa-video"
                         style="transition: transform 0.4s 0.1s, color 0.4s;"></a>
                     <a id=top1 movieTitle=deadpool class="icontop fa-regular fa-heart"></a>
                 </div>
@@ -144,7 +151,7 @@
             <img src="images/americansniper.jpeg" alt="" width=250px>
             <div class="top-content">
                 <div class="iconstop">
-                    <a href="moviePages/main.html" class="icontop fa-solid fa-video"></a>
+                    <a href="movies/AmericanSniper/americansniper.html" class="icontop fa-solid fa-video"></a>
                     <a id=top2 movieTitle=americansniper class="icontop fa-regular fa-heart"></a>
                 </div>
             </div>
@@ -154,7 +161,7 @@
             <img src="images/gattaca.jpeg" alt="" width=250px, height=80px>
             <div class="top-content">
                 <div class="iconstop">
-                    <a href="moviePages/main.html" class="icontop fa-solid fa-video"></a>
+                    <a href="movies/template/template.html" class="icontop fa-solid fa-video"></a>
                     <a id=top3 movieTitle=gattaca class="icontop fa-regular fa-heart"></a>
                 </div>
             </div>
@@ -164,7 +171,7 @@
             <img src="images/thebatman.jpeg" alt="" width=250px>
             <div class="top-content">
                 <div class="iconstop">
-                    <a href="moviePages/main.html" class="icontop fa-solid fa-video"></a>
+                    <a href="movies/TheBatman/theBatman.html" class="icontop fa-solid fa-video"></a>
                     <a id=top4 movieTitle=thebatman class="icontop fa-regular fa-heart"></a>
                 </div>
             </div>
@@ -174,7 +181,7 @@
             <img src="images/nope.jpeg" alt="" width=250px height=80px>
             <div class="top-content">
                 <div class="iconstop">
-                    <a href="moviePages/main.html" class="icontop fa-solid fa-video"></a>
+                    <a href="movies/template/template.html" class="icontop fa-solid fa-video"></a>
                     <a id=top5 movieTitle=nope class="icontop fa-regular fa-heart"></a>
                 </div>
             </div>
@@ -189,21 +196,21 @@
     <div class="recommend" style="margin-left: 3%" style="padding:10px 0;">
 
         <div class="image recom">
-            <img src="images/gattaca.jpeg" alt="" width=330px>
+            <img src="images/dune.jpeg" alt="" width=330px>
             <div class="recom-content">
                 <div class="iconsrecom">
-                    <a href="moviePages/main.html" class="iconrecom fa-solid fa-video"></a>
-                    <a id=recom1 movieTitle=gattaca class="iconrecom fa-regular fa-heart"></a>
+                    <a href="movies/template/template.html" class="iconrecom fa-solid fa-video"></a>
+                    <a id=recom1 movieTitle=dune class="iconrecom fa-regular fa-heart"></a>
                 </div>
             </div>
         </div>
 
         <div class="image recom">
-            <img src="images/thebatman.jpeg" alt="" width=330px>
+            <img src="images/interstellar.jpeg" alt="" width=330px>
             <div class="recom-content">
                 <div class="iconsrecom">
-                    <a href="moviePages/main.html" class="iconrecom fa-solid fa-video"></a>
-                    <a id=recom2 movieTitle=thebatman class="iconrecom fa-regular fa-heart"></a>
+                    <a href="movies/template/template.html" class="iconrecom fa-solid fa-video"></a>
+                    <a id=recom2 movieTitle=interstellar class="iconrecom fa-regular fa-heart"></a>
                 </div>
             </div>
         </div>
@@ -215,13 +222,13 @@
     <div class=categories>
         <div style="margin-left: 3%" style="padding:20px 0;">
             <a class="categoriesPhoto" href="categoryPages/action.html"><img src="images/action.jpeg" alt="Action"
-                    width="300" height="100"></a>
+                    style="width:300px;height:100px"></a>
             <a class="categoriesPhoto" href="categoryPages/comedy.html"><img src="images/comedy.png" alt="Comedy"
-                    width="300" height="100"></a>
+                style="width:300px;height:100px"></a>
             <a class="categoriesPhoto" href="categoryPages/horror.html"><img src="images/horror.jpeg" alt="Horror"
-                    width="300" height="100"></a>
+                style="width:300px;height:100px"></a>
             <a class="categoriesPhoto" href="categoryPages/sciFi.html"><img src="images/sci-fi.jpeg" alt="Sci-Fi"
-                    width="300" height="100"></a>
+                style="width:300px;height:100px"></a>
         </div>
     </div>
 

@@ -188,54 +188,6 @@ ul#drop li:hover {
   padding-top: 3px;
 }
 
-.myFeatured {
-  display: none;
-}
-
-.previous,
-.next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-40%);
-  width: 30px;
-  text-align: center;
-  line-height: 60px;
-  background: rgba(0, 0, 0, 0.3);
-  color: #fff;
-  text-decoration: none;
-  font-size: 20px;
-  z-index: 2;
-}
-
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-.previous:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-.circle {
-  position: relative;
-  bottom: 30px;
-  left: center;
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: rgb(255, 255, 255);
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active,
-.circle:hover {
-  background-color: #ff0000bb;
-}
-
 .fade {
   animation-name: fade;
   animation-duration: 1.5s;
@@ -424,8 +376,18 @@ ul#drop li:hover {
   height: 40px;
 }
 
+.categoriesPhoto{
+  padding: 20px 0;
+  border-radius: 15px;
+  border: 1px solid #2c3e50;
+  display: inline-block;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
 .categoriesPhoto:hover {
   background-color: var(--color-primary);
+  cursor: pointer;
 }
 
 .formatWatch {
@@ -438,7 +400,7 @@ ul#drop li:hover {
 }
 
 .top5 {
-  padding: 20px 0;
+  padding: 30px 0;
   display: flex;
   box-sizing: border-box;
   overflow: hidden;
@@ -494,10 +456,6 @@ ul#drop li:hover {
 
 .MovieList {
   display: none;
-}
-
-.demo {
-  border-image: round;
 }
 
 
@@ -559,4 +517,34 @@ ul#drop li:hover {
 
 .recom-content:hover::before {
   height: 50px;
+}
+
+#previousWatch,
+#nextWatch {
+  position: absolute;
+  top: 95%;
+  transform: translateY(-30%);
+  width: 30px;
+  text-align: center;
+  line-height: 60px;
+  background: rgba(255, 255, 255, 0);
+  color: rgb(255, 255, 255, .75);
+  text-decoration: none;
+  font-size: 20px;
+  z-index: 0;
+  transition: 1 ease;
+}
+
+#previousWatch{
+  left: 3%;
+}
+#nextWatch {
+  right: 3%;
+  border-radius: 3px 0 0 3px;
+}
+
+#previousWatch:hover,
+#nextWatch:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+  color:rgb(255, 255, 255, 1)
 }

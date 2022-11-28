@@ -1,5 +1,5 @@
 
-let arr = ["deadpool", "americansniper", "gattaca", "nope", "thebatman"];
+let arr = ["americansniper", "deadpool", "gattaca", "nope", "thebatman", "dune", "interstellar"];
 
 
 var search = document.getElementsByClassName("search-data")[0];
@@ -13,21 +13,28 @@ function showList() {
         var li = document.createElement("li");
         a.innerHTML = res[i];
         if (res[i] == "deadpool") {
-            a.href = "../moviePages/deadpool.html";
+            a.href = "../movies/Deadpool/deadpool.html";
             images.src = "../images/deadpool.jpeg";
         } else if (res[i] == "americansniper") {
-            a.href = "../moviePages/main.html";
+            a.href = "../movies/AmericanSniper/americansniper.html";
             images.src = "../images/americansniper.jpeg";
         } else if (res[i] == "gattaca") {
-            a.href = "../moviePages/main.html";
+            a.href = "../movies/template/template.html";
             images.src = "../images/gattaca.jpeg";
-
         } else if (res[i] == "nope") {
-            a.href = "../moviePages/main.html";
+            a.href = "../movies/template/template.html";
             images.src = "../images/nope.jpeg";
+        } else if (res[i] == "thebatman") {
+            a.href = "../movies/TheBatman/theBatman.html";
+            images.src = "images/thebatman.jpeg";
+        } else if (res[i] == "dune") {
+            a.href = "../movies/template/template.html";
+            images.src = "../images/dune.jpeg";
+        } else if (res[i] == "interstellar") {
+            a.href = "../movies/template/template.html";
+            images.src = "../images/interstellar.jpeg"
         } else {
-            a.href = "../moviePages/main.html";
-            images.src = "../images/thebatman.jpeg";
+            a.href = "../movies/template/template.html";
         }
         a.appendChild(images);
         document.getElementById("drop").appendChild(li);

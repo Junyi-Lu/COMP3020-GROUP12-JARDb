@@ -173,7 +173,7 @@ next.addEventListener("click", () => {
 
 	}
 	else if (click >= 4) {
-		href = "moviePages/main.html"
+		href = "movies/TheBatman/theBatman.html"
 		window.location.assign(href);
 	}
 

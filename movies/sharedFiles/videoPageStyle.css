@@ -1,0 +1,366 @@
+@import url("../../css/index.css");
+
+p
+{
+    font-family: sans-serif;
+    font-style: normal;
+    color: whitesmoke;
+}
+
+h1
+{
+    font-family: sans-serif;
+    font-size: 30px;
+
+    
+    color: white;
+    
+
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h2
+{
+    font-family: sans-serif;
+    font-size: 25px;
+    font-weight: normal;
+    
+    color: whitesmoke;
+    
+    width: 30%;
+
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.videoPageClosure
+{
+    float: center;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.informationWrapper
+{
+    padding-left: 5%;
+    padding-right: 5%;
+    position: relative;
+    margin-bottom: 80px;
+}
+
+.videoPlayerBlock
+{
+    width: 100%;
+    height: (100% - 50px);
+}
+
+.basicInfo
+{
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.movieTitle
+{
+    margin-top: 15px;
+    margin-right: 15px;
+    float:left;
+}
+
+.watchLaterButton
+{
+    cursor: pointer;
+}
+
+.ratingBlock
+{
+    margin: 0 auto;
+    margin-top: 25px;
+    width: 30%;
+}
+
+.ratingHeading
+{
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.ratingDropDown
+{
+    position: absolute;
+    display: inline-block;
+    z-index: 5;
+}
+
+.ratingOptions
+{
+    background-color: #141920;
+    border-radius: 5px;
+    z-index: 5;
+
+    display: inline-block;
+
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.ratingButton, .oneStar, .twoStar, .threeStar, .fourStar, .fiveStar
+{
+    font-family: sans-serif;
+    font-style: normal;
+    font-size: 30px; 
+    display:inline-block;
+    color: #2b3749;
+
+    margin-left: 5px;
+    margin-right: 5px;
+
+    cursor: pointer;
+    transition: color 0.5s;
+}
+
+.oneStar, .twoStar, .threeStar, .fourStar, .fiveStar
+{
+    pointer-events: none;
+}
+
+/* Rating Hovers end */
+.fiveStar:hover + .fourStar
+{
+    color: rgb(233, 216, 67);    
+}
+
+.ratingButton
+{
+    background:none;
+    border:none;
+
+    margin-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.ratingButton:hover
+{
+    color: rgb(233, 216, 67);    
+}
+
+.totalRating
+{
+    font-size: 25px;
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.categories
+{
+    float: left;
+}
+
+.category
+{
+    background-color: #212b38;
+
+    border: none;
+    border-radius: 8px;
+
+    height: 30px;
+    width: 100px;
+
+    margin-right: 10px;
+
+    vertical-align: top;
+
+    color: whitesmoke;
+
+    cursor: pointer;   
+
+    display: inline-block;
+
+    transition: background-color 0.5s;
+}
+
+.category:hover
+{
+    background-color: rgb(75, 75, 75);
+}
+
+.category:active
+{
+    background-color: rgb(149, 149, 149);
+}
+
+.primaryInformation
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 33%;
+}
+
+.information
+{
+    display: block;
+    margin-bottom: 80px
+}
+
+.synopsis
+{
+    font-size: 15px;
+    line-height: 23px;
+    margin-top: 5px;
+    margin-bottom: 0;
+    z-index: 1;
+}
+
+.thumbnail
+{
+    width: 30%;
+    border-radius: 5px;
+    object-fit:contain
+}
+
+.nextEpisodeInfo
+{
+    position: absolute;
+    top: 0;
+    left: 30%;
+
+    margin-top: 0;
+    margin-left: 1%;
+    width: 29%;
+    font-size: 25px;
+}
+
+.moreEpisodes
+{
+    position: absolute;
+    left: 70%;
+    width: 10%;
+    height: 100%;
+
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    
+    background-color: rgb(46, 46, 46);
+}
+
+.more
+{
+
+    font-family: sans-serif;
+    color: whitesmoke;
+    font-size: 100%;
+}
+
+.ri-layout-grid-fill
+{
+    margin-top: 5%;
+    font-size: 500%;
+    color:whitesmoke;
+}
+
+.triviaBlock
+{
+    margin-bottom: 80px;
+}
+
+.triviaImage
+{
+    width: 33%;
+    overflow: hidden;
+    display: inline-block;
+
+    border-style: solid;
+    border-radius: 10px;
+    border-color: whitesmoke;
+    border-width: 1px;
+
+    box-shadow: 0px 3px 5px 0 rgba(0, 0, 0, 0.6);
+}
+
+.triviaInformation
+{
+    vertical-align: top;
+    display: inline-block;
+    margin-left: 1%;
+    max-width:64%;
+}
+
+.triviaText
+{
+    line-height: 23px;
+}
+
+.actorGrid
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 0.5%;
+    row-gap: 25px;
+    margin-bottom: 80px;
+}
+
+.actor
+{
+    height: 100%;
+    position: relative;
+
+    padding: 15px 15px;
+
+    background-color: #212b38;;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: whitesmoke;
+    border-width: 1px;
+
+    box-shadow: 0px 3px 5px 0 rgba(0, 0, 0, 0.6);
+}
+
+.actorImage
+{
+    float: left;
+    
+    border-radius: 100%;
+    height: 100px;   
+}
+
+.actorInfo
+{
+    float: left;
+    vertical-align: top;
+    margin-top: 10px;
+    margin-left: 25px;
+    padding-left: 10px;
+}
+
+.characterName
+{
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.role
+{
+    color:rgb(182, 182, 182);
+}
+
+
+.swiper-image:hover{
+    background-color: #0073ff;
+    cursor: pointer;
+}
+
+.swiper-image {
+    padding: 4px 0;
+    border-radius: 15px;
+    border: 1px solid #2c3e50;
+    display: inline-block;
+    font-size: 40px;
+    justify-content: space-between;
+    box-sizing: border-box;
+  }
