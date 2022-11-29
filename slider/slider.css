@@ -4,16 +4,24 @@
     z-index: 0;
 }
 
+.fourColSwiper
+{
+    height: 140px;
+}
+
 .swiper-slide 
 {
+    position: relative;
     text-align: center;
     font-size: 18px;
-    background: gray;
+    text-decoration: none;
+    cursor: pointer;
+
 
     /* Center slide text vertically */
     display: -webkit-box;
     display: -ms-flexbox;
-    display: -webkit-flex;
+    display: -wesbkit-flex;
     display: flex;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -25,6 +33,18 @@
     align-items: center;
 }
 
+.swiper-link
+{
+    display: contents;
+}
+
+.swiper-image
+{
+    width: 100%;
+    height: 100%;
+}
+
+
 .swiper-pagination-bullet 
 { 
     background-color: white;
@@ -32,18 +52,29 @@
 
 .swiper-button-next, .swiper-button-prev
 {
-    color: white;
-    opacity: 75%;
+    color: rgba(0, 0, 0, 0);
 }
 
-.swiper-button-next:hover, .swiper-button-prev:hover
+.arrow 
 {
-    opacity: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-40%);
+  width: 30px;
+  text-align: center;
+  font-style: normal;
+  line-height: 60px;
+  background: rgba(0, 0, 0, 0.3);
+  border-style: solid;
+  border-color: white;
+  border-width: 1px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  z-index: 2;
 }
 
-.swiper-link
+.arrow:hover
 {
-    display: inline-flex;   /* Gets rid of bar underneath image */
-    width: 100%; 
-    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
 }

@@ -105,16 +105,16 @@ body {
   display: flex;
 }
 
-.border{
-    width:1px;
-    height:20px;
-    background: #bbb;
-    margin: 0 30px;
+.border {
+  width: 1px;
+  height: 20px;
+  background: #bbb;
+  margin: 0 30px;
 }
 
-.bottom-section span{
-    font-size: 14px;
-    display: block;
+.bottom-section span {
+  font-size: 14px;
+  display: block;
 }
 
 .social-media {

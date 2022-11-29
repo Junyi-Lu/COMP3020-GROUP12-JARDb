@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link rel = "stylesheet" href = "../../slider/slider.css">
+    <link rel = "stylesheet" href="../sharedFiles/videoPageStyle.css">
+    <title>Template</title>
+</head>
+
+<body>
+    <div class="menu-bar">
+        <a href="../../index.html">
+            <h1 class="logo" style="padding-left:100px">JAR<span>Db.</span></h1>
+        </a>
+        <div class="search-container">
+            <input type="search" maxlength="70" class="search-data" placeholder="Search JARDb" , required>
+            <p id="selectedid"></p>
+        </div>
+        <ul>
+            <li><a href="../../index.html">Home<i class="ri-home-3-line"></i></a></li>
+            <li><a href="#">Categories </a>
+                <div class="dropdown-menu">
+                    <ul>
+                        <li><a href="#">Movies<i id="fd" class="fas fa-caret-right"></i></a>
+                            <div class="dropdown-menu-1">
+                                <ul>
+                                    <li><a href="../../categoryPages/action.html">Action</a></li>
+                                    <li><a href="../../categoryPages/comedy.html">Comedy</a></li>
+                                    <li><a href="../../categoryPages/fantasy.html">Fantasy</a></li>
+                                    <li><a href="../../categoryPages/sciFi.html">Sci-Fi</a></li>
+                                    <li><a href="../../categoryPages/horror.html">Horror</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#">Watch List</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li><a id=askAI href="../../askAI.html" title="Answer some questions and get an AI to suggest a movie.">AskAI<i
+                        class="ri-robot-line"></i></a></li>
+            <li><a href="../../userCard.html">User<i class=""><i class="ri-user-5-fill"></i></a></li>
+        </ul>
+    </div>
+
+    <div class="videoPlayerBlock">
+        <video controls width = 100%>
+            <source src = "../sharedFiles/sampleVideo.mp4" type = "video/mp4">
+        </video>
+    </div>
+
+    <div class = "informationWrapper">
+        <div class="primaryInformation">
+            <div class="basicInfo">
+                <div class = "movieTitle">
+                    <h1>
+                        Movie Title
+                    </h1>
+                </div>
+                <div class = "watchLaterButton">
+                    <a id=watch1 class="icon fa-regular fa-heart"></a>  
+                </div>          
+            </div>
+
+            <div class="ratingBlock">
+                <h2 class="ratingHeading">
+                    Rating
+                </h2>
+                <div class="ratingDropDown">
+                    <button class="ratingButton">
+                        &#9733
+                    </button>
+                    <p class="totalRating">
+                        #.#/5
+                    </p>
+                    <br>
+                    <div class="ratingOptions">
+                        <div class="oneStar">&#9733</div>
+                        <div class="twoStar">&#9733</div>
+                        <div class="threeStar">&#9733</div>
+                        <div class="fourStar">&#9733</div>
+                        <div class="fiveStar">&#9733</div>
+                    </div>
+                </div>
+            </div>
+            <div class="categories">
+                <a href="../../categoryPages/action.html">
+                    <button class="category">
+                        Action
+                    </button>
+                </a>
+
+                <a href="../../categoryPages/comedy.html">
+                    <button class="category">
+                        Comedy
+                    </button>
+                </a>
+            </div>
+        </div>
+
+        <div class="information">
+            <p class="synopsis">
+                This is the movie descrpition. Lorem ipsum dolor sit amet, 
+                consectetur adipiscing elit. Fusce tempus quam sagittis turpis
+                porta cursus eget nec urna. In aliquam libero quis facilisis 
+                fermentum. Vestibulum non sodales justo. Cras vitae diam ultrices, 
+                rhoncus urna ut, accumsan ante. In hac habitasse platea dictumst. 
+                Orci varius natoque penatibus et magnis dis parturient montes, 
+                nascetur ridiculus mus. Aenean tempor libero blandit egestas euismod.
+                Pellentesque fermentum iaculis venenatis. Nunc ut sollicitudin leo,
+                vitae fermentum quam. Donec a sodales sem, nec aliquam magna. Mauris
+                a orci nulla. Nunc imperdiet, dolor eu congue consectetur, ante sem 
+                hendrerit felis, maximus interdum ante mi quis justo. Nunc vitae 
+                sodales lorem. Maecenas orci risus, fermentum a malesuada nec, 
+                maximus a mauris. Donec ut lectus quis lorem ultrices lobortis. 
+                Vestibulum lobortis libero sit amet enim vehicula, nec feugiat mi 
+                mattis. Praesent bibendum condimentum imperdiet. Morbi ornare in 
+                massa at imperdiet. Sed sapien odio, aliquam non placerat eget, 
+                laoreet ac ligula. Curabitur lobortis sem vel nibh ultrices, et 
+                fermentum tortor ornare. Quisque et lacinia lacus, vestibulum 
+                suscipit magna.
+            </p>
+        </div>
+
+        <h1>
+            Trivia
+        </h1>
+        <hr class="videoPageClosure" size="2" color="white">
+        <div class = "triviaBlock">
+            <div class = "triviaImage">
+                <img src = "factImage.jpg" style = "width: 100%; display: block;">
+            </div>
+            <div class = "triviaInformation">
+                <h2 class = "triviaText">
+                    Did you know?
+                </h2>
+                <br>
+                <p class = "triviaText">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Nunc maximus, metus blandit suscipit tincidunt, diam urna 
+                    auctor neque, sit amet cursus dolor libero eget tortor. 
+                    Vestibulum ac ullamcorper diam, eget sollicitudin massa. 
+                    Aenean leo lorem, blandit non ligula eu, auctor sagittis eros. 
+                    Etiam fermentum velit vitae urna blandit commodo. Aliquam vitae 
+                    risus vitae lectus accumsan dignissim in non libero. Aenean non 
+                    augue ac lectus euismod pharetra rhoncus et magna. Nunc fermentum
+                    dui quis mauris posuere, eu aliquet nibh ullamcorper. 
+                    Aenean tristique massa dignissim odio volutpat maximus. 
+                    Proin vitae facilisis libero. Pellentesque vitae metus tincidunt,
+                    blandit dolor in, lobortis enim. Duis commodo convallis ultricies.
+                    Proin dapibus justo nulla, non pulvinar massa eleifend vel.
+                </p>
+            </div>
+        </div>
+
+        <h1>
+            Cast
+        </h1>
+        <hr class="videoPageClosure" size="2" color="white">
+
+        <div class="actorGrid">
+            <div class="actor">
+                <img class="actorImage" src="Actors/person.jpg">
+                <div class="actorInfo">
+                    <p class="characterName">Character Name <br> Actor Name</p>
+                    <p class="role">Role</p>
+                </div>
+            </div>
+            <div class="actor">
+                <img class="actorImage" src="Actors/person.jpg">
+                <div class="actorInfo">
+                    <p class="characterName">Character Name <br> Actor Name</p>
+                    <p class="role">Role</p>
+                </div>
+            </div>
+            <div class="actor">
+                <img class="actorImage" src="Actors/person.jpg">
+                <div class="actorInfo">
+                    <p class="characterName">Character Name <br> Actor Name</p>
+                    <p class="role">Role</p>
+                </div>
+            </div>
+            <div class="actor">
+                <img class="actorImage" src="Actors/person.jpg">
+                <div class="actorInfo">
+                    <p class="characterName">Character Name <br> Actor Name</p>
+                    <p class="role">Role</p>
+                </div>
+            </div>
+            <div class="actor">
+                <img class="actorImage" src="Actors/person.jpg">
+                <div class="actorInfo">
+                    <p class="characterName">Character Name <br> Actor Name</p>
+                    <p class="role">Role</p>
+                </div>
+            </div>
+            <div class="actor">
+                <img class="actorImage" src="Actors/person.jpg">
+                <div class="actorInfo">
+                    <p class="characterName">Character Name <br> Actor Name</p>
+                    <p class="role">Role</p>
+                </div>
+            </div>
+        </div>
+        
+        <h1>
+            More like this
+        </h1>
+        <hr class="videoPageClosure" size="2" color="white">
+        <div class = "swiper fourColSwiper">
+            <div class = "swiper-wrapper">
+   
+                <div class="swiper-slide">
+                    <a href="../AmericanSniper/americansniper.html">
+                        <img class="swiper-image" src="../../images/americansniper.jpeg">
+                    </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <a href="../TheBatman/theBatman.html">
+                        <img class="swiper-image" src="../../images/thebatman.jpeg">
+                    </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <a href="../sharedFiles/otherPage.html">
+                        <img class="swiper-image" src="../../images/deadpool.jpeg">
+                    </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <a href="../sharedFiles/otherPage.html">
+                        <img class="swiper-image" src="../../images/brahmastra.jpeg" style="width:300px;height:115px">
+                    </a>
+
+                </div>
+                <div class="swiper-slide">
+                    <a href="../sharedFiles/otherPage.html">
+                        <img class="swiper-image" src="../../images/blackPanther1.jpg" style="width:300px;height:115px">
+                    </a>
+                </div>
+            </div>
+
+            <div class="swiper-button-prev">
+                <div class = "arrow">&#10094;</div>
+            </div>
+            <div class="swiper-button-next">
+                <div class = "arrow">&#10095;</div>
+            </div>
+        </div>
+        
+    </div>
+
+
+    <div class="kefu_q1" style="right:5px;bottom:20px;">
+        <ul>
+            <li class="q1_top" id="get_top"><i id="up" class="ri-arrow-up-line"></i></li>
+        </ul>
+    </div>
+    
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src = "../../slider/slider.js"></script>
+    <script src = "../../js/movieScript.js"></script>
+    <script src= "../sharedFiles/ratingScript.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://kit.fontawesome.com/6c9eb2e773.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

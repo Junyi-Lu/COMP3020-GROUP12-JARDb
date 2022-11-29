@@ -9,24 +9,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
     <link rel="stylesheet" href="slider/slider.css">
 </head>
 
-<body onload="displayDemo()">
+<body>
     <div class="menu-bar">
         <a href="index.html">
-            <h1 class="logo" style="padding-left:50px">JAR<span>Db.</span></h1>
+            <h1 class="logo" style="padding-left:100px">JAR<span>Db.</span></h1>
         </a>
         <div class="search-container">
-            <p>
-                <input id="searchID" type="search" maxlength="70" class="search-data" placeholder="Search JARDb" ,
-                    required>
-            </p>
+            <input type="search" maxlength="70" class="search-data" placeholder="Search JARDb" , required>
+            <p id="selectedid"></p>
         </div>
         <ul>
             <li><a href="index.html">Home<i class="ri-home-3-line"></i></a></li>
-            <li><a href="#">Categories <i id="fd" class="fas fa-caret-down"></i></a>
+            <li><a href="#">Categories </a>
                 <div class="dropdown-menu">
                     <ul>
                         <li><a href="#">Movies<i id="fd" class="fas fa-caret-right"></i></a>
@@ -40,23 +39,16 @@
                                 </ul>
                             </div>
                         </li>
-                        <li><a href="#">Watch<i id="fd" class="fas fa-caret-right"></i></a>
-                            <div class="dropdown-menu-2">
-                                <ul>
-                                    <li><a href="#">Watched</a></li>
-                                    <li><a href="#">Watching</a></li>
-                                </ul>
-                            </div>
+                        <li><a href="#">Watch List</a>
                         </li>
                     </ul>
                 </div>
             </li>
-            <li><a href="askAI.html" title="Answer some questions and get an AI to suggest a movie.">AskAI<i class="ri-robot-line"></i></a></li>
+            <li><a id=askAI href="askAI.html" title="Answer some questions and get an AI to suggest a movie.">AskAI<i
+                        class="ri-robot-line"></i></a></li>
             <li><a href="userCard.html">User<i class=""><i class="ri-user-5-fill"></i></a></li>
         </ul>
-        <p id="selectedid"></p>
     </div>
-
 
     <div>
         <ol id="movieList-Placeholder">
@@ -65,153 +57,161 @@
         </ol>
     </div>
 
-    <div class="swiper">
+    <div class="swiper singleSwiper">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-                <a href="moviePages/deadpool.html" class="swiper-link">
+                <a href="movies/Deadpool/deadpool.html" class="swiper-link">
                     <img src="images/deadpool.jpeg" style="width:100%">
                 </a>
             </div>
             <div class="swiper-slide">
-                <a href="moviePages/main.html" class="swiper-link">
+                <a href="movies/TheBatman/theBatman.html" class="swiper-link">
                     <img src="images/thebatman.jpeg" style="width:100%">
                 </a>
             </div>
             <div class="swiper-slide">
-                <a href="moviePages/main.html" class="swiper-link">
+                <a href="movies/AmericanSniper/americansniper.html" class="swiper-link">
                     <img src="images/americansniper.jpeg" style="width:100%">
                 </a>
             </div>
         </div>
 
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-prev">
+            <div class = "arrow">&#10094;</div>
+        </div>
+        <div class="swiper-button-next">
+            <div class = "arrow">&#10095;</div>
+        </div>
+
         <div class="swiper-pagination"></div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="slider/slider.js"></script>
     <br>
 
-    <h1 style="padding: 20px, 0" class="watchList"><i class="ri-film-line ri-2x"></i> Watch List</h1>
+    <h1 style="padding: 30px, 0" class="watchListHead"><i class="ri-film-line ri-2x"></i> Watch List</h1>
     <hr class="closure" size="2" color="white">
-    <div class=formatWatch>
-        <div class="image watch" style="margin-left: 3%;">
-            <img src="images/deadpool.jpeg" alt="" width=330px>
+    <div class=grid>
+        <div class="image watch gridItem">
+            <a class="watchList" href><img class="watchIMG" src alt=""></a>
             <div class="watch-content">
                 <div class="icons">
-                    <a href="moviePages/deadpool.html" class="icon fa-solid fa-video"></a>
-                    <a id=watch1 class="icon fa-regular fa-heart"></a>
+                    <a href="#" class="icon fa-solid fa-video"></a>
                 </div>
             </div>
         </div>
 
         <div class="image watch">
-            <img src="images/americansniper.jpeg" alt="" width=330px>
+            <a class="watchList" href><img class="watchIMG" src alt="" width=100%></a>
             <div class="watch-content">
                 <div class="icons">
-                    <a href="moviePages/main.html" class="icon fa-solid fa-video"></a>
-                    <a id=watch2 class="icon fa-regular fa-heart"></a>
+                    <a href="#" class="icon fa-solid fa-video"></a>
                 </div>
             </div>
         </div>
 
         <div class="image watch">
-            <img src="images/gattaca.jpeg" alt="" width=330px>
+            <a class="watchList" href><img class="watchIMG" src alt="" width=360px></a>
             <div class="watch-content">
                 <div class="icons">
-                    <a href="moviePages/main.html" class="icon fa-solid fa-video"></a>
-                    <a id=watch3 class="icon fa-regular fa-heart"></a>
+                    <a href="#" class="icon fa-solid fa-video"></a>
                 </div>
             </div>
         </div>
 
         <div class="image watch">
-            <img src="images/thebatman.jpeg" alt="" width=330px>
+            <a class="watchList" href><img class="watchIMG" src alt="" width=360px></a>
             <div class="watch-content">
                 <div class="icons">
-                    <a href="moviePages/main.html" class="icon fa-solid fa-video"></a>
-                    <a id=watch4 class="icon fa-regular fa-heart"></a>
+                    <a href="#" class="icon fa-solid fa-video"></a>
                 </div>
             </div>
         </div>
+
+        <div class="image watch">
+            <a class="watchList" href><img class="watchIMG" src alt="" width=360px></a>
+            <div class="watch-content">
+                <div class="icons">
+                    <a href="#" class="icon fa-solid fa-video"></a>
+                </div>
+            </div>
+        </div>
+
+        <a id=previousWatch>&#10094;</a>
+        <a id=nextWatch>&#10095;</a>
     </div>
 
 
 
     <h1 style="padding-top: 20px, 0" class="top_5"><i class="ri-film-line ri-2x"></i> Top 5</h1>
     <hr class="closure" size="2" color="white">
-    <div class="top5" style="padding-top: 20px, 0">
-        <div class="images top" style="margin-left: 3%">
-            <img src="images/deadpool.jpeg" alt="" width=250px>
-            <div class="top-content" style="margin-left: 3%;">
-                <div class="iconstop">
-                    <a href="moviePages/deadpool.html" class="icontop fa-solid fa-video"></a>
-                    <a id=top#1 class="icontop fa-regular fa-heart"></a>
+    <div class="grid">
+        <div class = "image recom gridItem">
+            <img src="images/deadpool.jpeg" alt ="" class = "gridImage">
+            <div class="recom-content">
+                <div class="iconsrecom">
+                    <a href="movies/Deadpool/deadpool.html" class="iconrecom fa-solid fa-video"></a>
+                    <a id=recom6 movieTitle=deadpool class="iconrecom fa-regular fa-heart"></a>
+                </div>
+            </div>
+        </div>   
+        <div class = "image recom gridItem">
+            <img src="images/americansniper.jpeg" alt="" class = "gridImage">
+            <div class="recom-content">
+                <div class="iconsrecom">
+                    <a href="movies/AmericanSniper/americansniper.html" class="iconrecom fa-solid fa-video"></a>
+                    <a id=recom7 movieTitle=americansniper class="iconrecom fa-regular fa-heart"></a>
                 </div>
             </div>
         </div>
-
-        <div class="images top">
-            <img src="images/americansniper.jpeg" alt="" width=250px>
-            <div class="top-content">
-                <div class="iconstop">
-                    <a href="moviePages/main.html" class="icontop fa-solid fa-video"></a>
-                    <a id=top#2 class="icontop fa-regular fa-heart"></a>
+        <div class = "image recom gridItem">
+            <img src="images/thebatman.jpeg" alt="" class = "gridImage">
+            <div class="recom-content">
+                <div class="iconsrecom">
+                    <a href="movies/TheBatman/theBatman.html" class="iconrecom fa-solid fa-video"></a>
+                    <a id=recom8 movieTitle=thebatman class="iconrecom fa-regular fa-heart"></a>
                 </div>
             </div>
         </div>
-
-        <div class="images top">
-            <img src="images/gattaca.jpeg" alt="" width=250px, height=80px>
-            <div class="top-content">
-                <div class="iconstop">
-                    <a href="moviePages/main.html" class="icontop fa-solid fa-video"></a>
-                    <a id=top#3 class="icontop fa-regular fa-heart"></a>
+        <div class = "image recom gridItem">
+            <img src="images/gattaca.jpeg" alt="" class = "gridImage">
+            <div class="recom-content">
+                <div class="iconsrecom">
+                    <a href="movies/template/template.html" class="iconrecom fa-solid fa-video"></a>
+                    <a id=recom9 movieTitle=gattaca class="iconrecom fa-regular fa-heart"></a>
                 </div>
             </div>
         </div>
-
-        <div class="images top">
-            <img src="images/thebatman.jpeg" alt="" width=250px>
-            <div class="top-content">
-                <div class="iconstop">
-                    <a href="moviePages/main.html" class="icontop fa-solid fa-video"></a>
-                    <a id=top#4 class="icontop fa-regular fa-heart"></a>
-                </div>
-            </div>
-        </div>
-
-        <div class="images top">
-            <img src="images/nope.jpeg" alt="" width=250px height=80px>
-            <div class="top-content">
-                <div class="iconstop">
-                    <a href="moviePages/main.html" class="icontop fa-solid fa-video"></a>
-                    <a id=top#5 class="icontop fa-regular fa-heart"></a>
+        <div class = "image recom gridItem">
+            <img src="images/nope.jpeg" alt="" class = "gridImage">
+            <div class="recom-content">
+                <div class="iconsrecom">
+                    <a href="movies/template/template.html" class="iconrecom fa-solid fa-video"></a>
+                    <a id=recom10 movieTitle=nope class="iconrecom fa-regular fa-heart"></a>
                 </div>
             </div>
         </div>
     </div>
 
-
-
     <h1 style="padding-top: 20px, 0" class="recommended"><i class="ri-film-line ri-2x"></i> Recommended</h1>
     <hr class="closure" size="2" color="white">
-    <div class="recommend" style="margin-left: 3%" style="padding:10px 0;">
-        <div class="image watch">
-            <img src="images/gattaca.jpeg" alt="" width=330px>
-            <div class="watch-content">
-                <div class="icons">
-                    <a href="moviePages/main.html" class="icon fa-solid fa-video"></a>
-                    <a id=recom1 class="icon fa-regular fa-heart"></a>
+    <div class="grid">
+        <div class = "image recom gridItem">
+            <img src="images/dune.jpeg" alt ="" class = "gridImage">
+            <div class="recom-content">
+                <div class="iconsrecom">
+                    <a href="movies/template/template.html" class="iconrecom fa-solid fa-video"></a>
+                    <a id=recom1 movieTitle=dune class="iconrecom fa-regular fa-heart"></a>
                 </div>
             </div>
         </div>
-        <div class="image watch">
-            <img src="images/thebatman.jpeg" alt="" width=330px>
-            <div class="watch-content">
-                <div class="icons">
-                    <a href="moviePages/main.html" class="icon fa-solid fa-video"></a>
-                    <a id=recom2 class="icon fa-regular fa-heart"></a>
+
+        <div class = "image recom gridItem">
+            <img src="images/interstellar.jpeg" alt="" class = "gridImage">
+            <div class="recom-content">
+                <div class="iconsrecom">
+                    <a href="movies/template/template.html" class="iconrecom fa-solid fa-video"></a>
+                    <a id=recom2 movieTitle=interstellar class="iconrecom fa-regular fa-heart"></a>
                 </div>
             </div>
         </div>
@@ -219,22 +219,24 @@
 
     <h1 style="padding: 20px, 0" class="categoriesText"><i class="ri-film-line ri-2x"></i> Categories</h1>
     <hr class="closure" size="2" color="white">
-    <div class=categories>
-        <div style="margin-left: 3%" style="padding:20px 0;">
-            <a class ="categoriesPhoto" href="categoryPages/action.html"><img src="images/action.jpeg" alt="Action" width="300" height="100"></a>
-            <a class ="categoriesPhoto" href="categoryPages/comedy.html"><img src="images/comedy.png" alt="Comedy" width="300" height="100"></a>
-            <a class ="categoriesPhoto" href="categoryPages/horror.html"><img src="images/horror.jpeg" alt="Horror" width="300" height="100"></a>
-            <a class ="categoriesPhoto" href="categoryPages/sciFi.html"><img src="images/sci-fi.jpeg" alt="Sci-Fi" width="300" height="100"></a>
+    <div class = "grid">
+        <div class = "gridItem">
+            <a class="categoriesPhoto" href="categoryPages/action.html">
+                <img src="images/action.jpeg" alt="Action" class = "gridImage">
+            </a>
         </div>
-    </div>
-
-    <div id="demoBar" class="demoBar" style="padding:20px 0;"><i class="ri-film-line ri-2x"></i> Demo
-        <hr class="closure" size="2" color="white">
-        <div style="padding:10px 0;">
-            <img class="demo" src href width="300" height="100">
-            <img class="demo" src href width="300" height="100">
-            <img class="demo" src href width="300" height="100">
-            <img class="demo" src href width="300" height="100">
+        <div class = "gridItem">
+            <a class="categoriesPhoto" href="categoryPages/comedy.html">
+                <img src="images/comedy.png" alt="Comedy" class = "gridImage">
+            </a>
+        </div>
+        <div class ="gridItem">
+            <a class="categoriesPhoto" href="categoryPages/horror.html"><img src="images/horror.jpeg" alt="Horror"
+                class = "gridImage"></a>
+        </div>
+        <div class = "gridItem">
+            <a class="categoriesPhoto" href="categoryPages/sciFi.html"><img src="images/sci-fi.jpeg" alt="Sci-Fi"
+                class = "gridImage"></a>
         </div>
     </div>
 
