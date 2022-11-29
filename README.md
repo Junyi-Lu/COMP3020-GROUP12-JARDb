@@ -13,4 +13,4 @@ Click the ```index.html```
 3. We only created three movie specific pages for the movies, the rest are fake pages.
 4. The heart button is fake on the movie page, it can only change the status but cannot add the movie to the watchlist. 
 5. The watchlist button under the categories dropdown menu in the top bar doesn't do anything.
-6. Users can currently only search for movies located on the home page
+6. Users can currently only search for movies existing on the home page
