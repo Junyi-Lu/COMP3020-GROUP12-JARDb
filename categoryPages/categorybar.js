@@ -26,7 +26,7 @@ function showList() {
             images.src = "../images/nope.jpeg";
         } else if (res[i] == "thebatman") {
             a.href = "../movies/TheBatman/theBatman.html";
-            images.src = "images/thebatman.jpeg";
+            images.src = "../images/thebatman.jpeg";
         } else if (res[i] == "dune") {
             a.href = "../movies/template/template.html";
             images.src = "../images/dune.jpeg";
