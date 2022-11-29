@@ -23,7 +23,7 @@ let MovieList = [deadpool, americanSniper, gattaca, nope, theBatman, dune, inter
 let arr = ["americansniper", "deadpool", "gattaca", "nope", "thebatman", "dune", "interstellar"];
 let WatchList = [];
 let length = 0;
-let MAX_WATCH_LIST = 5;
+let MAX_WATCH_LIST = 4;
 
 onloadstart = getWatchList();
 onloadstart = defaultWatchList();
@@ -159,7 +159,6 @@ function clickHeart(id) {
                             length--;
                             if(i <MAX_WATCH_LIST){
                                 currWatchList[i].setAttribute("href", "#");
-                                watchIMG[i].src = "";
                                 videotop[i].setAttribute("href", "#");
                                 currWatchList[i].setAttribute("width", 0);
                                 icontop[i].style.display = "none";
@@ -197,7 +196,6 @@ function clickHeart(id) {
                             length--;
                             if(i <MAX_WATCH_LIST){
                                 currWatchList[i].setAttribute("href", "#");
-                                watchIMG[i].src = "";
                                 video[i].setAttribute("href", "#");
                                 currWatchList[i].setAttribute("width", 0);
                             }
@@ -310,7 +308,6 @@ function makeClean() {
         if (i >= WatchList.length) {
             onHover[i].style.display = "none";
             currWatchList[i].setAttribute("href", "#");
-            watchIMG[i].src = "";
             video[i].setAttribute("href", "#");
             currWatchList[i].setAttribute("width", 0);
             icons[i].style.display = "none";
@@ -370,6 +367,8 @@ function fixRecom() {
         }
     }
 }
+
+ 
 
 
 clickHeart("recom1");
