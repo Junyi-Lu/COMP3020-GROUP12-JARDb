@@ -20,7 +20,7 @@ const theBatman = new Movie("TheBatman", "Action", "Crime", 4.0, "images/thebatm
 const dune = new Movie("Dune", "Sci-Fi", "Adventure", 4.0, "images/dune.jpeg", "Timothee Chalamet", "Zendaya", "Jason Momoa", "movies/template/template.html");
 const interstellar = new Movie("Interstellar", "Sci-Fi", "Adventure", 4.5, "images/interstellar.jpeg", "Matthew McConaughey", "Jessica Chastain", "Anne Hathaway", "movies/template/template.html");
 let MovieList = [deadpool, americanSniper, gattaca, nope, theBatman, dune, interstellar];
-let arr = ["americansniper", "deadpool", "gattaca", "nope", "thebatman"];
+let arr = ["americansniper", "deadpool", "gattaca", "nope", "thebatman", "dune", "interstellar"];
 let WatchList = [];
 let length = 0;
 let MAX_WATCH_LIST = 4;
@@ -42,18 +42,25 @@ function showList() {
             a.href = "movies/Deadpool/deadpool.html";
             images.src = "images/deadpool.jpeg";
         } else if (res[i] == "americansniper") {
-            a.href = "movies/template/template.html";
+            a.href = "movies/AmericanSniper/americansniper.html";
             images.src = "images/americansniper.jpeg";
         } else if (res[i] == "gattaca") {
             a.href = "movies/template/template.html";
             images.src = "images/gattaca.jpeg";
-
         } else if (res[i] == "nope") {
             a.href = "movies/template/template.html";
             images.src = "images/nope.jpeg";
+        } else if (res[i] == "thebatman") {
+            a.href = "movies/TheBatman/theBatman.html";
+            images.src = "images/thebatman.jpeg";
+        } else if (res[i] == "dune") {
+            a.href = "movies/template/template.html";
+            images.src = "images/dune.jpeg";
+        } else if (res[i] == "interstellar") {
+            a.href = "movies/template/template.html";
+            images.src = "images/interstellar.jpeg"
         } else {
             a.href = "movies/template/template.html";
-            images.src = "images/thebatman.jpeg";
         }
         a.appendChild(images);
         document.getElementById("drop").appendChild(li);
