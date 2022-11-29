@@ -242,13 +242,10 @@ ul#drop li:hover {
 
 .watch {
   position: relative;
-  transform: translate(1%, -3%);
 }
 
 .image {
-  width: 320px;
-  height: 110px;
-  margin: 7px;
+  height: 150px;
   overflow: hidden;
   cursor: pointer;
 }
@@ -376,18 +373,8 @@ ul#drop li:hover {
   height: 40px;
 }
 
-.categoriesPhoto{
-  padding: 20px 0;
-  border-radius: 15px;
-  border: 1px solid #2c3e50;
-  display: inline-block;
-  justify-content: space-between;
-  box-sizing: border-box;
-}
-
 .categoriesPhoto:hover {
   background-color: var(--color-primary);
-  cursor: pointer;
 }
 
 .formatWatch {
@@ -522,13 +509,13 @@ ul#drop li:hover {
 #previousWatch,
 #nextWatch {
   position: absolute;
-  top: 95%;
-  transform: translateY(-30%);
+  top: 30%;
+  font-style: normal;
   width: 30px;
   text-align: center;
   line-height: 60px;
-  background: rgba(255, 255, 255, 0);
-  color: rgb(255, 255, 255, .75);
+  background-color: rgba(0, 0, 0, 0.6);
+  color:rgb(255, 255, 255, 1);
   text-decoration: none;
   font-size: 20px;
   z-index: 0;
@@ -547,4 +534,11 @@ ul#drop li:hover {
 #nextWatch:hover {
   background-color: rgba(0, 0, 0, 0.6);
   color:rgb(255, 255, 255, 1)
+}
+
+.watchIMG
+{
+  border-radius: 10px;
+  object-fit: fill;
+  width: 100%;
 }

@@ -15,12 +15,12 @@ class Movie {
 const deadpool = new Movie("Deadpool", "Action", "Comedy", 4.5, "images/deadpool.jpeg", "Ryan Reynolds", "Morena Baccarin", "Gina Carano", "movies/Deadpool/deadpool.html");
 const americanSniper = new Movie("AmericanSniper", "Action", "Biography", 4.5, "images/americansniper.jpeg", "Bradley Cooper", "Sienna Miller", "Kyle Gallner", "movies/AmericanSniper/americansniper.html");
 const gattaca = new Movie("Gattaca", "Sci-Fi", "Romance", 3.9, "images/gattaca.jpeg", "Ethan Hawke", "Uma Thurma", "Jude Law", "movies/template/template.html");
-const nope = new Movie("Nope", "Horror", "Sci-Fi", 3.5, "images/nope.jpeg", "Daniel Kaluuya", "Keke Palmer", "Brandon Peresa", "movies/template/template.html");
+const nope = new Movie("Nope", "Horror", "Sci-Fi", 3.5, "images/nope.jpeg", "Daniel Kaluuya", "Keke Palmer", "Brandon Peresa","movies/template/template.html");
 const theBatman = new Movie("TheBatman", "Action", "Crime", 4.0, "images/thebatman.jpeg", "Robert Pattinson", "Zoe Kravitz", "Jeffrey Wright", "movies/TheBatman/theBatman.html");
 const dune = new Movie("Dune", "Sci-Fi", "Adventure", 4.0, "images/dune.jpeg", "Timothee Chalamet", "Zendaya", "Jason Momoa", "movies/template/template.html");
 const interstellar = new Movie("Interstellar", "Sci-Fi", "Adventure", 4.5, "images/interstellar.jpeg", "Matthew McConaughey", "Jessica Chastain", "Anne Hathaway", "movies/template/template.html");
 let MovieList = [deadpool, americanSniper, gattaca, nope, theBatman, dune, interstellar];
-let arr = ["americansniper", "deadpool", "gattaca", "nope", "thebatman", "dune", "interstellar"];
+let arr = ["americansniper", "deadpool", "gattaca", "nope", "thebatman"];
 let WatchList = [];
 let length = 0;
 let MAX_WATCH_LIST = 4;
@@ -42,25 +42,18 @@ function showList() {
             a.href = "movies/Deadpool/deadpool.html";
             images.src = "images/deadpool.jpeg";
         } else if (res[i] == "americansniper") {
-            a.href = "movies/AmericanSniper/americansniper.html";
+            a.href = "movies/template/template.html";
             images.src = "images/americansniper.jpeg";
         } else if (res[i] == "gattaca") {
             a.href = "movies/template/template.html";
             images.src = "images/gattaca.jpeg";
+
         } else if (res[i] == "nope") {
             a.href = "movies/template/template.html";
             images.src = "images/nope.jpeg";
-        } else if (res[i] == "thebatman") {
-            a.href = "movies/TheBatman/theBatman.html";
-            images.src = "images/thebatman.jpeg";
-        } else if (res[i] == "dune") {
-            a.href = "movies/template/template.html";
-            images.src = "images/dune.jpeg";
-        } else if (res[i] == "interstellar") {
-            a.href = "movies/template/template.html";
-            images.src = "images/interstellar.jpeg"
         } else {
             a.href = "movies/template/template.html";
+            images.src = "images/thebatman.jpeg";
         }
         a.appendChild(images);
         document.getElementById("drop").appendChild(li);
@@ -129,6 +122,9 @@ function clickHeart(id) {
     let currWatchList = document.getElementsByClassName("watchList");
     let watchIMG = document.getElementsByClassName("watchIMG");
     let icontop = document.getElementsByClassName("iconstop");
+    let icons = document.getElementsByClassName("iconsrecom");
+    let videotop = document.getElementsByClassName("icontop fa-solid fa-video");
+    let video = document.getElementsByClassName("iconrecom fa-solid fa-video");
     let inWatchList = false;
     var heartButton = document.getElementById(id);
     let title = document.getElementById(id).getAttribute("movieTitle");
@@ -154,11 +150,13 @@ function clickHeart(id) {
                     if (WatchList[i].title.toLowerCase().includes(title)) {
                         if (WatchList[i].title.toLowerCase().includes(title)) {
                             length--;
-                            if (i < MAX_WATCH_LIST) {
+                            if(i <MAX_WATCH_LIST){
                                 currWatchList[i].setAttribute("href", "#");
-                                watchIMG[i].src = "";
+                                watchIMG[i].src = "../a.jpg";
+                                videotop[i].setAttribute("href", "#");
                                 currWatchList[i].setAttribute("width", 0);
                                 icontop[i].style.display = "none";
+                                videotop[i].style.display = "none";
                             }
                             WatchList.splice(i, 1);
                         }
@@ -190,10 +188,12 @@ function clickHeart(id) {
                     if (WatchList[i].title.toLowerCase().includes(title)) {
                         if (WatchList[i].title.toLowerCase().includes(title)) {
                             length--;
-                            if (i < MAX_WATCH_LIST) {
+                            if(i <MAX_WATCH_LIST){
                                 currWatchList[i].setAttribute("href", "#");
-                                watchIMG[i].src = "";
+                                watchIMG[i].src = "../a.jpg";
+                                video[i].setAttribute("href", "#");
                                 currWatchList[i].setAttribute("width", 0);
+                                currWatchList[i].src = "../a.jpg";
                             }
                             WatchList.splice(i, 1);
                         }
@@ -232,6 +232,7 @@ function displayWatchList() {
     for (i = 0; i < currWatchList.length && i < watchIMG.length; i++) {
         if (WatchList[i] != undefined) {
             watchIMG[i].src = WatchList[i].src;
+            watchIMG[i].setAttribute("height", "100%");
             let href = WatchList[i].href;
             currWatchList[i].setAttribute("href", href);
             video[i].setAttribute("href", href);
@@ -304,9 +305,10 @@ function makeClean() {
         if (i >= WatchList.length) {
             onHover[i].style.display = "none";
             currWatchList[i].setAttribute("href", "#");
-            watchIMG[i].src = "";
+            watchIMG[i].src = "../a.jpg";
             video[i].setAttribute("href", "#");
             currWatchList[i].setAttribute("width", 0);
+            currWatchList[i].src = "../a.jpg"
             icons[i].style.display = "none";
             video[i].style.display = "none";
         }
@@ -366,20 +368,22 @@ function fixRecom() {
 }
 
 
-clickHeart("top1");
-clickHeart("top2");
-clickHeart("top3");
-clickHeart("top4");
-clickHeart("top5");
+
 
 clickHeart("recom1");
 clickHeart("recom2");
+clickHeart("recom6");
+clickHeart("recom7");
+clickHeart("recom8");
+clickHeart("recom9");
+clickHeart("recom10");
+
 
 var prevWatch = document.getElementById("previousWatch");
 
-prevWatch.addEventListener('click', function () {
+prevWatch.addEventListener('click', function (){
     console.log("clicked on Prev")
-    if (WatchList.length > MAX_WATCH_LIST) {
+    if(WatchList.length > MAX_WATCH_LIST){
         let temp = WatchList[0];
         WatchList.shift();
         WatchList.push(temp);
@@ -388,8 +392,8 @@ prevWatch.addEventListener('click', function () {
 })
 
 var nextWatch = document.getElementById("nextWatch");
-nextWatch.addEventListener('click', function () {
-    if (WatchList.length > MAX_WATCH_LIST) {
+nextWatch.addEventListener('click', function (){
+    if(WatchList.length > MAX_WATCH_LIST){
         WatchList.unshift(WatchList.pop());
     }
     displayWatchList();

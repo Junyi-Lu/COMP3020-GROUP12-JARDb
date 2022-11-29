@@ -1,6 +1,6 @@
 # COMP3020-GROUP12-JARDb
 
-## How to Run our Websites:
+## How to Run our Website:
 Click the ```index.html```
 
 **It is better to use the Chrome as a main browser**
